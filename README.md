@@ -32,3 +32,11 @@ Currently the project is in it's beginnig stages of development.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Libraries, Modules and NPM Packages
+- [React.js](https://github.com/facebook/react#readme)
+- [Express.js](https://github.com/expressjs/express#readme)
+- [Styled-Icons](https://github.com/jacobwgillespie/styled-icons#readme) & [Styled-Components](https://github.com/styled-components/styled-components#readme)
+- [SQLite3](https://github.com/mapbox/node-sqlite3#readme)
+- [Pretty-Error](https://github.com/AriaMinaei/pretty-error#readme)
+- [Oakdex-Pokedex](https://github.com/jalyna/oakdex-pokedex#readme)

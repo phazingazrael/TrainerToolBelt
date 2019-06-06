@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+var PrettyError = require('pretty-error');
+
+// instantiate PrettyError, which can then be used to render error objects
+var pe = new PrettyError();
+pe.start();
 
 function App() {
   return (
