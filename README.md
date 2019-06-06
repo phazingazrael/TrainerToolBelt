@@ -3,7 +3,7 @@ This project originally began as a personal utility that I planned to use for st
 
 After creating a rough proof of concept for the project I decided that it needed to be improved upon and took up the task of recreating it as a standalone desktop application without the need for a web host however this soon presented issues that would have rendered the project unusable. 
 
-This project has received many revisions to its concept since it was first created, One such revision is that the project now runs on Node.js using React.js, Express.js and some other companion libraries to aid in development. The base of the project is stemmed from Kriasoft's [react-starter-kit](https://github.com/kriasoft/react-starter-kit).
+This project has received many revisions to its concept since it was first created, One such revision is that the project now runs on Node.js using React.js, Express.js and some other companion libraries to aid in development. The base of the project is stemmed from Kriasoft's [Create React App](https://github.com/facebook/create-react-app#readme).
 
 ## Installation
 This section is currently a placeholder and will be updated later on during development of the project.
@@ -14,7 +14,7 @@ This section is currently a placeholder and will be updated later on during deve
 ## Roadmap
 Currently the project is in it's beginnig stages of development. 
 ###### The following is a list of current plans for the development.
-- Re-Purpose [react-starter-kit](https://github.com/kriasoft/react-starter-kit) to fit the design idea that currently exists
+- Re-Purpose [Create React App](https://github.com/facebook/create-react-app#readme) to fit the design idea that currently exists
 - Start developing components for
   - Side bar navigation
   - Listing all existing teams
