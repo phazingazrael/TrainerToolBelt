@@ -1,37 +1,32 @@
 {
-  "name": "trainertoolbelt",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "express": "^4.17.1",
-    "oakdex-pokedex": "^0.4.5",
-    "pretty-error": "^2.1.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "sqlite3": "^4.0.8",
-    "styled-components": "^4.3.0",
-    "styled-icons": "^8.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+    "name": "example-create-react-app-express",
+    "version": "1.0.0",
+    "description": "Example on using create-react-app with a Node Express Backend",
+    "license": "MIT",
+    "scripts": {
+      "client": "cd client && yarn start",
+      "server": "nodemon server.js",
+      "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+      "dev:server": "cd client && yarn build && cd .. && yarn start",
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1"
+    },
+    "devDependencies": {
+      "concurrently": "^4.1.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/esausilva/example-create-react-app-express.git"
+    },
+    "bugs": {
+      "url": "https://github.com/esausilva/example-create-react-app-express/issues"
+    },
+    "keywords": [
+      "node",
+      "express",
+      "create-react-app"
     ]
   }
-}
