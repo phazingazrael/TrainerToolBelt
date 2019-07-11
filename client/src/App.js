@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import "./App.css";
 import "semantic-ui-css/semantic.min.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-//import { Grid, Segment } from "semantic-ui-react";
-import Main from "./modules/Home";
 
-//var PrettyError = require("pretty-error");
+import Main from "./modules/Main";
+
+var PrettyError = require("pretty-error");
 
 // instantiate PrettyError, which can then be used to render error objects
-//var pe = new PrettyError();
-//pe.start();
+var pe = new PrettyError();
+pe.start();
+
 const routes = [
   {
     path: "/",

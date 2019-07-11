@@ -4,21 +4,25 @@
   "private": true,
   "proxy": "http://localhost:5000/",
   "dependencies": {
+    "assert": "^2.0.0",
     "concurrently": "^4.1.0",
     "express": "^4.17.1",
+    "immutability-helper": "^3.0.1",
+    "lowdb": "^1.0.0",
     "nodemon": "^1.19.1",
     "oakdex-pokedex": "^0.4.5",
     "pretty-error": "^2.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-jsonschema-form": "^1.6.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.87.1",
-    "sqlite3": "^4.0.8",
     "styled-components": "^4.3.0",
     "styled-icons": "^8.1.0",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.1",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "run": "concurrently --kill-others-on-fail \" react-scripts start \" \" server \" ",
