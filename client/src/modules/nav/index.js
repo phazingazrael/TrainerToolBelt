@@ -1,11 +1,11 @@
 import React from "react";
-
-//const team = this.props.team;
+const uuidv4 = require("uuid/v4");
 
 class Nav extends React.Component {
   constructor() {
     super();
     this.state = {};
+    this.teamList = [];
   }
 
   //getTeams = async () => {
@@ -31,16 +31,17 @@ class Nav extends React.Component {
   };
 
   putTeams = async () => {
+    
     const response = await fetch("/api/teams", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(this.props.team)
+      body: this.teamList
     });
     const body = await response.text();
 
-    console.log({ responseToPost: body });
+    console.log(body);
   };
 
   getTeams = async () => {
@@ -56,17 +57,22 @@ class Nav extends React.Component {
     this.getTeams()
       .then(res => {
         console.log("receiving teams");
-        console.log(res);
+        console.log("derp" + JSON.stringify(res));
         //this.setState({ teams: res });
-    
+        this.teamList.push(res);
+        console.log("test" + JSON.stringify(this.teamList));
       })
       .catch(err => console.log(err));
+
+    this.props.team.id = uuidv4();
+    this.props.team.Team[0].nick = "testing";
     //this.putTeams();
     //this.forceUpdate();
   }
 
   render() {
     var team = this.props.team;
+    
     console.log("TEAM " + JSON.stringify(team.Team[0]));
 
     return (
@@ -77,8 +83,11 @@ class Nav extends React.Component {
           <div className="teamItem">test</div>
         </div>
         Thing to go here is nav side link with all teams
-        <br/>
-        <button onClick={() => this.putTeams().then(this.getTeams())} type="button">
+        <br />
+        <button
+          onClick={() => this.putTeams().then(this.getTeams())}
+          type="button"
+        >
           save team?
         </button>
       </div>

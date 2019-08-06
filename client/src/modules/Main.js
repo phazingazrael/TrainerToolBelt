@@ -22,7 +22,7 @@ const team = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -32,7 +32,7 @@ const team = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -42,7 +42,7 @@ const team = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -52,7 +52,7 @@ const team = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -62,7 +62,7 @@ const team = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -72,7 +72,7 @@ const team = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     }
   ]
 };
@@ -93,7 +93,7 @@ const defaultTeam = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -103,7 +103,7 @@ const defaultTeam = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -113,7 +113,7 @@ const defaultTeam = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -123,7 +123,7 @@ const defaultTeam = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -133,7 +133,7 @@ const defaultTeam = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     },
     {
       id: "",
@@ -143,7 +143,7 @@ const defaultTeam = {
       img: "",
       type: "",
       route: "",
-      dead: false
+      isDead: false
     }
   ]
 };
@@ -173,8 +173,8 @@ class Main extends Component {
     //  })
     //  .catch(err => console.log(err));
 
-    team.id = uuidv4();
-    team.Team[0].nick = "testing";
+    //team.id = uuidv4();
+    //team.Team[0].nick = "testing";
 
     //this.putTeams();
     // this.forceUpdate();
