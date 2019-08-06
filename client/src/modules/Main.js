@@ -147,6 +147,7 @@ const defaultTeam = {
     }
   ]
 };
+console.log(defaultTeam);
 
 class Main extends Component {
   constructor() {
@@ -162,34 +163,20 @@ class Main extends Component {
     console.log("getTeams " + console.log(JSON.stringify(body)));
     return body;
   };
-  
-
-  putTeams = async () => {
-    const response = await fetch("/api/teams", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(this.team)
-    });
-    const body = await response.text();
-
-    console.log({ responseToPost: body });
-  };
 
   componentDidMount() {
-    this.getTeams()
-      .then(res => {
-        console.log("receiving teams");
-        console.log(JSON.stringify(res));
-        //this.setState({ teams: res });
-      })
-      .catch(err => console.log(err));
+    //this.getTeams()
+    //  .then(res => {
+    //    console.log("receiving teams");
+    //    console.log(JSON.stringify(res));
+    //    //this.setState({ teams: res });
+    //  })
+    //  .catch(err => console.log(err));
 
     team.id = uuidv4();
     team.Team[0].nick = "testing";
 
-    this.putTeams();
+    //this.putTeams();
     // this.forceUpdate();
   }
 
