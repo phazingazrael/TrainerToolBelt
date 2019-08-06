@@ -4,7 +4,7 @@ import "semantic-ui-css/semantic.min.css";
 import { Grid, Segment } from "semantic-ui-react";
 import Nav from "./nav";
 
-const uuidv4 = require("uuid/v4");
+//const uuidv4 = require("uuid/v4");
 
 const team = {
   nick: "",

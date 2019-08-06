@@ -12,8 +12,8 @@ var db = sublevel(
   })
 );
 
-var teamsDb = db.sublevel("/teams");
-var dexDb = db.sublevel("/pokedex");
+var teamsDb = db.sublevel("teams");
+var dexDb = db.sublevel("pokedex");
 
 oakdexPokedex = require("oakdex-pokedex");
 
@@ -67,9 +67,7 @@ app.get("/api/teams", (req, res) => {
 
 app.post("/api/teams", (req, res) => {
   console.log(req.body);
-  teamsDb.put("teams",  function(err) {
-    var pushed = req.body;
-    teamsDb.push({pushed})
+  teamsDb.put("teams", req.body, function(err) {
     teamsDb.get("teams", function(err, teams) {
       console.log(JSON.stringify(teams));
       console.log("team posted");

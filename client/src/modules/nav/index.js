@@ -31,17 +31,16 @@ class Nav extends React.Component {
   };
 
   putTeams = async () => {
-    
     const response = await fetch("/api/teams", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: this.teamList
+      body: JSON.stringify(this.teamList)
     });
     const body = await response.text();
 
-    console.log(body);
+    console.log({ responseToPost: body });
   };
 
   getTeams = async () => {
@@ -53,32 +52,34 @@ class Nav extends React.Component {
     return body;
   };
 
-  async componentDidMount() {
+  componentDidMount() {
     this.getTeams()
       .then(res => {
         console.log("receiving teams");
         console.log("derp" + JSON.stringify(res));
-        //this.setState({ teams: res });
-        this.teamList.push(res);
+        this.teamList.push(this.props.team,res);
         console.log("test" + JSON.stringify(this.teamList));
+        //this.teamList.push(this.props.team);
       })
       .catch(err => console.log(err));
 
-    this.props.team.id = uuidv4();
-    this.props.team.Team[0].nick = "testing";
     //this.putTeams();
     //this.forceUpdate();
   }
 
   render() {
     var team = this.props.team;
-    
-    console.log("TEAM " + JSON.stringify(team.Team[0]));
+    this.props.team.id = uuidv4();
+    this.props.team.Team[0].nick = "testing";
+
+    //this.teamList.push({team});
+
+    console.log("TEAM " + JSON.stringify(this.teamList));
 
     return (
       <div>
         <p>{team.id}</p>
-        {console.log("team?" + JSON.stringify(this.props))}
+        {console.log("team?" + JSON.stringify(this.props.team))}
         <div className="teamList">
           <div className="teamItem">test</div>
         </div>
