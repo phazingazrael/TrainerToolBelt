@@ -1,11 +1,12 @@
 import React from "react";
-const uuidv4 = require("uuid/v4");
+//const uuidv4 = require("uuid/v4");
 
 class Nav extends React.Component {
   constructor() {
     super();
     this.state = {};
     this.team = {
+      nick: "",
       id: "",
       teamName: "",
       gen: "",
@@ -76,30 +77,31 @@ class Nav extends React.Component {
     };
   }
 
-  getTeams = async () => {
-    const response = await fetch("/api/teams");
-    const body = await response.json();
+  //getTeams = async () => {
+  //  const response = await fetch("/api/teams");
+  //  const body = await response.json();
 
-    if (response.status !== 200) throw Error(body.message);
-    console.log("getTeams "+response.json());
-    return body;
-  };
+  //if (response.status !== 200) throw Error(body.message);
+  //    console.log("getTeams " + response.json());
+  //  return body;
+  //  };
+
   putTeams = async () => {
     const response = await fetch("/api/teams", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(this.team)
+      body: JSON.stringify(this.props.team)
     });
-    const body = await response.text();
+    //const body = await response.text();
 
-    console.log({ responseToPost: body });
+    //console.log({ responseToPost: body });
   };
 
   componentDidMount() {
-    this.team.id = uuidv4();
-    this.team.Team[0].nick = "testing";
+    //this.team.id = uuidv4();
+    //this.team.Team[0].nick = "testing";
 
     //this.getTeams()
     //  .then(res => {
@@ -109,15 +111,17 @@ class Nav extends React.Component {
     //
     //  })
     //  .catch(err => console.log(err));
-    this.putTeams();
+    //this.putTeams();
     this.forceUpdate();
   }
 
   render() {
     console.log("TEAM " + JSON.stringify(this.team.Team[0]));
+
     return (
       <div>
-        <p>{this.team.id}</p>
+        <p>{this.props.id}</p>
+        {console.log("team?" + JSON.stringify(this.props))}
         <div className="teamList">
           <div className="teamItem">test</div>
         </div>

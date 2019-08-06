@@ -4,8 +4,195 @@ import "semantic-ui-css/semantic.min.css";
 import { Grid, Segment } from "semantic-ui-react";
 import Nav from "./nav";
 
+const uuidv4 = require("uuid/v4");
+
+const team = {
+  nick: "",
+  id: "",
+  teamName: "",
+  gen: "",
+  dead: [],
+  boxed: [],
+  Team: [
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    }
+  ]
+};
+
+const defaultTeam = {
+  nick: "",
+  id: "",
+  teamName: "",
+  gen: "",
+  dead: [],
+  boxed: [],
+  Team: [
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    },
+    {
+      id: "",
+      name: "",
+      dexID: "",
+      nick: "",
+      img: "",
+      type: "",
+      route: "",
+      dead: false
+    }
+  ]
+};
 
 class Main extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  getTeams = async () => {
+    const response = await fetch("/api/teams");
+    const body = await response.json();
+
+    if (response.status !== 200) throw Error(body.message);
+    console.log("getTeams " + console.log(JSON.stringify(body)));
+    return body;
+  };
+  
+
+  putTeams = async () => {
+    const response = await fetch("/api/teams", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(this.team)
+    });
+    const body = await response.text();
+
+    console.log({ responseToPost: body });
+  };
+
+  componentDidMount() {
+    this.getTeams()
+      .then(res => {
+        console.log("receiving teams");
+        console.log(JSON.stringify(res));
+        //this.setState({ teams: res });
+      })
+      .catch(err => console.log(err));
+
+    team.id = uuidv4();
+    team.Team[0].nick = "testing";
+
+    this.putTeams();
+    // this.forceUpdate();
+  }
+
   render() {
     return (
       <div className="App">
@@ -18,7 +205,7 @@ class Main extends Component {
           <Grid.Row>
             <Grid.Column className="navLeft" width={4}>
               <Segment>
-                <Nav />
+                <Nav team={team} />
               </Segment>
             </Grid.Column>
             <Grid.Column className="contentMain " width={12}>
