@@ -31,7 +31,7 @@ class Nav extends React.Component {
   };
 
   putTeams = async () => {
-    this.teamList.push(this.props.team)
+    this.teamList.push(this.props.team);
     const response = await fetch("/api/teams", {
       method: "POST",
       headers: {
@@ -57,7 +57,7 @@ class Nav extends React.Component {
     this.getTeams()
       .then(res => {
         console.log("receiving teams");
-        console.log("this.props.team: "+JSON.stringify(this.props.team))
+        console.log("this.props.team: " + JSON.stringify(this.props.team));
         console.log("teamDB: " + JSON.stringify(res));
         this.teamList = res;
         console.log("post this.teamlist=res: " + JSON.stringify(this.teamList));
@@ -81,7 +81,6 @@ class Nav extends React.Component {
     return (
       <div>
         <p>{team.id}</p>
-        
         <div className="teamList">
           <div className="teamItem">test</div>
         </div>

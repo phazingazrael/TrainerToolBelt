@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Mon Aug 05 2019 22:52:49 GMT-0600 (Mountain Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* client/src/modules/nav/index.js
+* db/CURRENT
+* db/LOG
+* db/LOG.old
+
+
+Created files:
+* .autogit/logs/log-5-7-2019-22-22-43.txt
+* db/001555.ldb
+* db/MANIFEST-001603
+
+
+Deleted files:
+* db/MANIFEST-001552
+
+
+Renamed files:
