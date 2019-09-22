@@ -2,18 +2,17 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const level = require("level");
-const levelup = require("levelup");
-const sublevel = require("level-sublevel");
+const sub = require('subleveldown');
 
-var db = sublevel(
-  level("./db", {
-    db: require("leveldown"),
-    valueEncoding: "json"
-  })
-);
+// Database config begins
+var db = level('./db');
 
-var teamsDb = db.sublevel("teams");
-var dexDb = db.sublevel("pokedex");
+//var teamsDb = db.sublevel("teams");
+var teamsDb = sub(db, 'teams');
+
+//var dexDb = db.sublevel("pokedex");
+var dexDb = sub(db, 'dex')
+// Database config ends
 
 oakdexPokedex = require("oakdex-pokedex");
 
@@ -23,29 +22,7 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// DB put example
-//db.put("animal", {type: 'grizzly', name:'steve'}, function(err) {
-//this point animal = bear
-//  db.get('animal', function (err, animal){
-//    console.log(animal.name)
-//  })
-//});
-
 var dex = oakdexPokedex.allPokemon();
-
-//dexDb.del("pokedex", function(err) {
-//  dexDb.get("pokedex", function(err, pokedex) {
-//    console.log(JSON.stringify(pokedex));
-//    console.log("pokedex deleted");
-//  });
-//});
-
-//dexDb.put("pokedex", dex, function(err) {
-//  dexDb.get("pokedex", function(err, pokedex) {
-//    console.log(JSON.stringify(pokedex));
-//    console.log("pokedex posted");
-//  });
-//});
 
 // API calls
 app.get("/api/pokedex", (req, res) => {
