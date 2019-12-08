@@ -1,4 +1,7 @@
 import React from "react";
+import "./nav.css";
+import "semantic-ui-css/semantic.min.css";
+import { Grid, Segment } from "semantic-ui-react";
 
 
 const uuidv4 = require("uuid/v4");
@@ -11,7 +14,7 @@ class Nav extends React.Component {
     this.state = {
       teamList: [],
       teams: [],
-      team:[]
+      team:{}
     };
   }
 
@@ -64,7 +67,33 @@ class Nav extends React.Component {
   render() {
     console.log("TEAM " + JSON.stringify(this.state.teamList));
     const TeamList = this.state.teamList.map(function(item){
-      return <li name={item.id} key={item.id}> {item.id} </li>;
+      return (
+        <Grid className="teamIcon" id={item.id} name={item.id}>
+          <Grid.Row>
+            <p>Testing Team</p>
+          </Grid.Row>
+          <Grid.Row columns={6}>
+          <Grid.Column>
+              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
+            </Grid.Column>
+            <Grid.Column>
+              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
+            </Grid.Column>
+            <Grid.Column>
+              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
+            </Grid.Column>
+            <Grid.Column>
+              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
+            </Grid.Column>
+            <Grid.Column>
+              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
+            </Grid.Column>
+            <Grid.Column>
+              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      ) ;      //<li name={item.id} key={item.id}> {item.id} </li>;
     });    
     return (
       <div>
