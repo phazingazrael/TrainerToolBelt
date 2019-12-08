@@ -182,14 +182,14 @@ class Main extends Component {
     const body = await response.json();
 
     if (response.status !== 200) throw Error(body.message);
-    console.log("getTeams " + console.log(JSON.stringify(body)));
+    console.log("getTeams " + console.log(body));
     this.setState({teamList: body});
     console.log("main.js this.teamList= database get data => " + JSON.stringify(this.state.teamList));
     return body;
   };
 
   componentDidMount() {
-    this.getTeams();
+    //this.getTeams();
   }
 
   render() {

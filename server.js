@@ -53,8 +53,8 @@ app.get("/api/pokedex", (req, res) => {
 app.get("/api/teams", (req, res) => {
   console.log("sending teams");
   teamsDb.get("teams", function(err,teams){
-    //console.log(JSON.parse(teams))
-    res.send(teams)
+    //console.log(JSON.stringify(teams));
+    res.send(teams);
   })
   
 });
