@@ -7,6 +7,7 @@ import { Grid, Card } from "semantic-ui-react";
 const uuidv4 = require("uuid/v4");
 
 
+
 //const TeamList = teamList;
 class Nav extends React.Component {
   constructor() {
@@ -14,7 +15,8 @@ class Nav extends React.Component {
     this.state = {
       teamList: [],
       teams: [],
-      team:{}
+      team:{},
+      height: "",
     };
   }
 
@@ -75,14 +77,14 @@ class Nav extends React.Component {
       let differenciate = (contentHeight - navHeight)/2;
       //console.log("height difference between #content and @nav is "+differenciate+"px");
       let newHeight = ((winHeight - headHeight) + differenciate) - 30 +"px";
-      console.log(newHeight);
-      let nav = document.getElementById("nav");
-      nav.style("height", newHeight);
+      this.setState({height: newHeight});
+      console.log(this.state.height);
   }
 
   
     
   render() {
+    
     console.log("TEAM " + JSON.stringify(this.state.teamList));
     const TeamList = this.state.teamList.map(function(item){
       return (
@@ -104,7 +106,7 @@ class Nav extends React.Component {
       ) ;      //<li name={item.id} key={item.id}> {item.id} </li>;
     });    
     return (
-      <div>
+      <div >
         <div className="teamActive">
           <p>{this.state.team.id}</p>
         </div>
@@ -126,5 +128,6 @@ class Nav extends React.Component {
     );
   }
 }
+
 
 export default Nav;
