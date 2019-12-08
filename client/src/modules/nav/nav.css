@@ -3,6 +3,17 @@
     src: url(./font/PokemonGB.ttf);
 }
 
+.navLeft {
+    max-height: 90% !important;
+    overflow: hidden !important;
+    padding-left: 20px !important;
+  }
+
+.teamList {
+    overflow: auto;
+    padding: 15px;
+}
+
 .teamIcon{
     padding: 3px !important;
     font-family: PokemonGB;
@@ -22,10 +33,6 @@
     margin-top: 5px;
     margin-bottom: 5px;
     min-width: 200px;
-}
-
-.teamList {
-    padding: 15px;
 }
 
 /* overrides */

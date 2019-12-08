@@ -32,8 +32,6 @@ class Nav extends React.Component {
  
   putTeams = async () => {
     console.log("teamList "+JSON.stringify(this.state.teamList));
-    let sendTeams = this.state.teamList.push(this.state.team);
-    this.setState({teams: sendTeams});
     console.log("sendTeams = "+JSON.stringify(this.state.teams));
     const location = window.location.hostname;
     const response = await fetch(
@@ -48,6 +46,7 @@ class Nav extends React.Component {
     });
     const body = await response.json();
 
+    this.componentDidMount();
     return body;
   };
 
@@ -59,8 +58,12 @@ class Nav extends React.Component {
         tempTeam.id = uuidv4();
         this.setState({ team:this.props.team});
         this.setState({teamList:JSON.parse(res)});
-        //this.state.teamList.push(this.teams);
-        //this.state.teamList.push(this.team);
+        this.setState({teams: JSON.parse(res)});
+        console.log("before mergeing to send "+this.state.teams);
+        this.setState(prevState => ({
+          teams: [...prevState.teams, this.state.team]
+        }));
+        console.log("after mergeing to send "+this.state.teams);
         console.log("this.state.team: "+JSON.stringify(this.state.team));
       })
       .catch(err => console.log(err));      
