@@ -12,6 +12,14 @@ code {
     monospace;
 }
 
+.App{
+  color: #000000;
+}
+
+.containment{
+  border: 1px solid;
+}
+
 .contentMain{
   padding-right: 20px !important;
 }

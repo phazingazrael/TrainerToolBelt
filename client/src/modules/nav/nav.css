@@ -4,7 +4,6 @@
 }
 
 .navLeft {
-    max-height: 90% !important;
     overflow: hidden !important;
     padding-left: 20px !important;
   }

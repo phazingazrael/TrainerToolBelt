@@ -67,6 +67,10 @@ class Nav extends React.Component {
         console.log("this.state.team: "+JSON.stringify(this.state.team));
       })
       .catch(err => console.log(err));      
+      let height = document.getElementById('view').clientHeight;
+      this.setState({Height: height});
+
+    console.log(this.state.Height);
   }
 
   
@@ -98,9 +102,9 @@ class Nav extends React.Component {
           <p>{this.state.team.id}</p>
         </div>
         <div className="teamList">
-            <Grid>
+            
                 {TeamList}
-            </Grid>
+            
           </div>
         Thing to go here is nav side link with all teams
         <br />

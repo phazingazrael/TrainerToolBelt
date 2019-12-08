@@ -190,12 +190,15 @@ class Main extends Component {
 
   componentDidMount() {
     //this.getTeams();
+    let winHeight = window.innerHeight;
+
+    
   }
 
   render() {
     return (
-      <div className="App">
-        <Grid>
+      <div className="App" id="view" innerHeight={winHeight}>
+        <Grid className="containment">
           <Grid.Row>
             <Grid.Column width={16}>
               <Segment className="topBar">Header</Segment>
