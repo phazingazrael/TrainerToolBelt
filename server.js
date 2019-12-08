@@ -38,7 +38,8 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var dex = oakdexPokedex.allPokemon();
+//var dex = oakdexPokedex.allPokemon();
+var dex = oakdexPokedex.findPokemon(4);
 
 // API calls
 app.get("/api/pokedex", (req, res) => {

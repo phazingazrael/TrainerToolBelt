@@ -8,25 +8,26 @@ class Pokedex extends React.Component {
     };
   }
 
+  stripFillerData(){
+    this.setState(prevState => {
+      let dex = Object.assign({}, prevState.pokedex);   // creating copy of state variable style
+      const DexList = this.state.pokedex.map(function(item){
+        
+        return console.log("dex");
+      });    
+      return { dex };                                 // return new object style object
+    })
+    console.log('pre strip filler data ' + this.state.pokedex);
+  }
+
   componentDidMount() {
     this.getDex()
       .then(res => {
         console.log("receiving pokedex");
-        console.log("pre-Slice data not wanted " +res);
-        this.setState({ pokedex: res });
-        //Res.pokedex.splice(Res.pokedex.indexOf("kanto_id"));
-        //Res.pokedex.splice(Res.pokedex.indexOf("johto_id"));
-        //Res.pokedex.splice(Res.pokedex.indexOf("hoenn_id"));
-        //Res.pokedex.splice(Res.pokedex.indexOf("sinnoh_id"));
-        //Res.pokedex.splice(Res.pokedex.indexOf("unova_id"));
-        //Res.pokedex.splice(Res.pokedex.indexOf("kalos_id"));
-        //Res.pokedex.splice(Res.pokedex.indexOf("alola_id"));
-        //Res.pokedex.splice(Res.pokedex.indexOf('ultra_alola_id'));
-        console.log("post-Slice data not wanted " +res);
-        
         this.setState({ pokedex: res });
       })
       .catch(err => console.log(err));
+    this.stripFillerData();
   }
 
   getDex = async () => {
@@ -43,7 +44,7 @@ class Pokedex extends React.Component {
 
   render() {
     return( <div>
-      {console.log("this.state.pokedex")}
+      {this.state.pokedex}
     </div>);
   }
 }
