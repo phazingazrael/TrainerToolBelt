@@ -80,7 +80,7 @@ const defaultTeam = {
 console.log('defaults'+JSON.stringify(defaultTeam));
 
 class Main extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       team : {
@@ -189,23 +189,20 @@ class Main extends Component {
   };
 
   componentDidMount() {
-    //this.getTeams();
-    let winHeight = window.innerHeight;
-
-    
+    //this.getTeams();   
   }
 
   render() {
     return (
-      <div className="App" id="view" innerHeight={winHeight}>
+      <div className="App" id="view">
         <Grid className="containment">
-          <Grid.Row>
+          <Grid.Row id="header">
             <Grid.Column width={16}>
               <Segment className="topBar">Header</Segment>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row>
-            <Grid.Column className="navLeft" width={4}>
+          <Grid.Row id="content">
+            <Grid.Column id="nav" className="navLeft" width={4}>
               <Segment>
                 <Nav team={this.state.team} teams={this.state.teamList} />
               </Segment>

@@ -67,10 +67,17 @@ class Nav extends React.Component {
         console.log("this.state.team: "+JSON.stringify(this.state.team));
       })
       .catch(err => console.log(err));      
-      let height = document.getElementById('view').clientHeight;
-      this.setState({Height: height});
-
-    console.log(this.state.Height);
+      let winHeight = window.innerHeight;
+      let headHeight = document.getElementById("header").clientHeight;
+      //console.log(headHeight);
+      let contentHeight = document.getElementById("content").clientHeight;
+      let navHeight = document.getElementById("nav").clientHeight;
+      let differenciate = (contentHeight - navHeight)/2;
+      //console.log("height difference between #content and @nav is "+differenciate+"px");
+      let newHeight = ((winHeight - headHeight) + differenciate) - 30 +"px";
+      console.log(newHeight);
+      let nav = document.getElementById("nav");
+      nav.style("height", newHeight);
   }
 
   

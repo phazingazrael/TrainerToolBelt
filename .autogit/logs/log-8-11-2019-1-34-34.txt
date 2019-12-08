@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 08 2019 01:34:34 GMT-0700 (Mountain Standard Time)
+------------------------------------------------------
+
+Modified files:
+* client/src/index.css
+* client/src/modules/Main.js
+* client/src/modules/nav/index.js
+* client/src/modules/nav/nav.css
+* db/CURRENT
+* db/LOG
+* db/LOG.old
+
+
+Created files:
+* .autogit/logs/log-8-11-2019-1-4-26.txt
+
+
+Deleted files:
+
+
+Renamed files:
