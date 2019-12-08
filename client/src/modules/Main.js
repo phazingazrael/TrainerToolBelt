@@ -168,19 +168,7 @@ class Main extends Component {
   };
 
   componentDidMount() {
-    //this.getTeams()
-    //  .then(res => {
-    //    console.log("receiving teams");
-    //    console.log(JSON.stringify(res));
-    //    //this.setState({ teams: res });
-    //  })
-    //  .catch(err => console.log(err));
 
-    //team.id = uuidv4();
-    //team.Team[0].nick = "testing";
-
-    //this.putTeams();
-    // this.forceUpdate();
   }
 
   render() {

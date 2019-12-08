@@ -1,19 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 
 const uuidv4 = require("uuid/v4");
 
-var team = [];
-var teams = [];
-var teamList = [];
+//var team = [];
+//var teams = [];
+//var teamList = [];
 
-const TeamList = teamList;
+//const TeamList = teamList;
 class Nav extends React.Component {
   constructor() {
     super();
     this.state = {};
-    //this.teamList = [];
+    this.teamList = [];
+    //this.team = this.props.team;
+    this.teams = [];
   }
 
   getTeams = async () => {
@@ -38,7 +39,7 @@ class Nav extends React.Component {
             'Content-Type': 'application/json'
         }
       ,
-      body: JSON.stringify(teamList)
+      body: JSON.stringify(this.teamList)
     });
     const body = await response.json();
 
@@ -46,22 +47,16 @@ class Nav extends React.Component {
   };
 
   componentDidMount() {
-    this.props.team.id = uuidv4();
     this.getTeams()
       .then(res => {
-        teams = JSON.parse(res);
-        console.log(JSON.stringify(teams));
-        //teamList = teams.map();
-        teamList.push(teams);
-        teamList.push(team);
-        console.log(JSON.stringify(teamList));
-        //console.log("receiving teams");
-        //console.log("this.props.team: " + JSON.stringify(this.props.team));
-        //console.log("teamDB: " + res);
-        //this.teamList = res;
-        //console.log("post this.teamlist=res: " + this.teamList);
-        //this.teamList.push(this.props.team);
-        console.log(JSON.stringify(TeamList));
+        this.teams = JSON.parse(res);
+        this.team = this.props.team;
+        this.team.id = uuidv4();
+        //console.log("component did mount, get teams data " + JSON.stringify(teams));
+        //this.teamList = teams.map();
+        this.teamList.push(this.teams);
+        this.teamList.push(this.team);
+        console.log(JSON.stringify(this.teamList));
       })
       .catch(err => console.log(err));
       
@@ -70,9 +65,9 @@ class Nav extends React.Component {
   
     
   render() {
-    this.componentDidMount();
-    team = this.props.team;
-    teams = this.props.teams;
+    //this.componentDidMount();
+    //this.team = this.props.team;
+    //this.teams = this.props.teams;
     //console.log(JSON.stringify(this.props.team));
     //this.props.team.id = uuidv4();
     //this.props.team.Team[0].nick = "pushDaTeam";
@@ -83,8 +78,8 @@ class Nav extends React.Component {
     
     return (
       <div>
-        <p>{team.id}</p>
-        <div className="teamList">
+        <p>{this.props.team.id}</p>
+        <div className="teamActive">
           <div className="teamItem">test</div>
         </div>
         Thing to go here is nav side link with all teams
@@ -95,6 +90,7 @@ class Nav extends React.Component {
         >
           save team?
         </button>
+        
       </div>
     );
   }
