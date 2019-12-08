@@ -36,8 +36,6 @@ class Nav extends React.Component {
     };
  
   putTeams = async () => {
-    console.log("teamList "+JSON.stringify(this.state.teamList));
-    console.log("sendTeams = "+JSON.stringify(this.state.teams));
     const location = window.location.hostname;
     const response = await fetch(
     `http://${location}:5000/api/teams/`, {
@@ -56,7 +54,7 @@ class Nav extends React.Component {
   };
 
   delTeams = async () => {
-    console.log("deleting teams.")
+//    console.log("deleting teams.")
     const location = window.location.hostname;
     const response = await fetch(
     `http://${location}:5000/api/teams/`, {
@@ -76,11 +74,10 @@ class Nav extends React.Component {
     let navHeight = document.getElementById("nav").clientHeight;
     let differenciate = (contentHeight - navHeight)/2;
     let newHeight = ((winHeight - headHeight) + differenciate) - 60 +"px";
-    console.log(newHeight);
     this.setState(prevState => {
-      let style = Object.assign({}, prevState.style);  // creating copy of state variable jasper
-      style.height = newHeight;                     // update the name property, assign a new value                 
-      return { style };                                 // return new object jasper object
+      let style = Object.assign({}, prevState.style);   // creating copy of state variable style
+      style.height = newHeight;                         // update the name property, assign a new value                 
+      return { style };                                 // return new object style object
     })
     //this.delTeams();
   }
@@ -94,12 +91,9 @@ class Nav extends React.Component {
         this.setState({ team:this.props.team});
         this.setState({teamList:JSON.parse(res)});
         this.setState({teams: JSON.parse(res)});
-        console.log("before mergeing to send "+this.state.teams);
         this.setState(prevState => ({
           teams: [...prevState.teams, this.state.team]
         }));
-        console.log("after mergeing to send "+this.state.teams);
-        console.log("this.state.team: "+JSON.stringify(this.state.team));
       })
       .catch(err => console.log(err));      
       this.calcHeight();
@@ -108,8 +102,6 @@ class Nav extends React.Component {
   
     
   render() {
-    
-    console.log("TEAM " + JSON.stringify(this.state.teamList));
     const TeamList = this.state.teamList.map(function(item){
       return (
         <Grid.Row className="teamIcon" id={item.id} name={item.id} key={item.id}>

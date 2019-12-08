@@ -12,8 +12,19 @@ class Pokedex extends React.Component {
     this.getDex()
       .then(res => {
         console.log("receiving pokedex");
-        console.log(res);
-        this.setState({ pokedex: res});
+        console.log("pre-Slice data not wanted " +res);
+        this.setState({ pokedex: res });
+        //Res.pokedex.splice(Res.pokedex.indexOf("kanto_id"));
+        //Res.pokedex.splice(Res.pokedex.indexOf("johto_id"));
+        //Res.pokedex.splice(Res.pokedex.indexOf("hoenn_id"));
+        //Res.pokedex.splice(Res.pokedex.indexOf("sinnoh_id"));
+        //Res.pokedex.splice(Res.pokedex.indexOf("unova_id"));
+        //Res.pokedex.splice(Res.pokedex.indexOf("kalos_id"));
+        //Res.pokedex.splice(Res.pokedex.indexOf("alola_id"));
+        //Res.pokedex.splice(Res.pokedex.indexOf('ultra_alola_id'));
+        console.log("post-Slice data not wanted " +res);
+        
+        this.setState({ pokedex: res });
       })
       .catch(err => console.log(err));
   }
@@ -31,7 +42,9 @@ class Pokedex extends React.Component {
     };
 
   render() {
-    return( <div>{this.state.pokedex}</div>);
+    return( <div>
+      {console.log("this.state.pokedex")}
+    </div>);
   }
 }
 
