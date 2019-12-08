@@ -6,77 +6,7 @@ import Nav from "./nav";
 
 //const uuidv4 = require("uuid/v4");
 
-const team = {
-  nick: "",
-  id: "",
-  teamName: "",
-  gen: "",
-  dead: [],
-  boxed: [],
-  Team: [
-    {
-      id: "",
-      name: "",
-      dexID: "",
-      nick: "",
-      img: "",
-      type: "",
-      route: "",
-      isDead: false
-    },
-    {
-      id: "",
-      name: "",
-      dexID: "",
-      nick: "",
-      img: "",
-      type: "",
-      route: "",
-      isDead: false
-    },
-    {
-      id: "",
-      name: "",
-      dexID: "",
-      nick: "",
-      img: "",
-      type: "",
-      route: "",
-      isDead: false
-    },
-    {
-      id: "",
-      name: "",
-      dexID: "",
-      nick: "",
-      img: "",
-      type: "",
-      route: "",
-      isDead: false
-    },
-    {
-      id: "",
-      name: "",
-      dexID: "",
-      nick: "",
-      img: "",
-      type: "",
-      route: "",
-      isDead: false
-    },
-    {
-      id: "",
-      name: "",
-      dexID: "",
-      nick: "",
-      img: "",
-      type: "",
-      route: "",
-      isDead: false
-    }
-  ]
-};
-//const teams=[];
+
 const defaultTeam = {
   nick: "",
   id: "",
@@ -152,23 +82,96 @@ console.log('defaults'+JSON.stringify(defaultTeam));
 class Main extends Component {
   constructor() {
     super();
-    this.state = {};
-    this.teamList = [];
+    this.state = {
+      team : {
+        nick: "",  id: "",
+        teamName: "",
+        gen: "",
+        dead: [],
+        boxed: [],
+        Team: [
+          {
+            id: "",
+            name: "",
+            dexID: "",
+            nick: "",
+            img: "",
+            type: "",
+            route: "",
+            isDead: false
+          },
+          {
+            id: "",
+            name: "",
+            dexID: "",
+            nick: "",
+            img: "",
+            type: "",
+            route: "",
+            isDead: false
+          },
+          {
+            id: "",
+            name: "",
+            dexID: "",
+            nick: "",
+            img: "",
+            type: "",
+            route: "",
+            isDead: false
+          },
+          {
+            id: "",
+            name: "",
+            dexID: "",
+            nick: "",
+            img: "",
+            type: "",
+            route: "",
+            isDead: false
+          },  
+          {
+            id: "",
+            name: "",
+            dexID: "",
+            nick: "",
+            img: "",
+            type: "",
+            route: "",
+            isDead: false
+          },
+          {
+            id: "",
+            name: "",
+            dexID: "",
+            nick: "",
+            img: "",
+            type: "",
+            route: "",
+            isDead: false
+          }
+        ]
+      },
+      teamList: []
+    };
   }
 
   getTeams = async () => {
-    const response = await fetch("/api/teams");
+    const location = window.location.hostname;
+    const response = await fetch(
+    `http://${location}:5000/api/teams/`, {
+      method: 'GET'});
     const body = await response.json();
 
     if (response.status !== 200) throw Error(body.message);
     console.log("getTeams " + console.log(JSON.stringify(body)));
-    this.teamList = body;
-    console.log("main.js this.teamList= database get" + this.teamList);
+    this.setState({teamList: body});
+    console.log("main.js this.teamList= database get data => " + JSON.stringify(this.state.teamList));
     return body;
   };
 
   componentDidMount() {
-
+    this.getTeams();
   }
 
   render() {
@@ -183,7 +186,7 @@ class Main extends Component {
           <Grid.Row>
             <Grid.Column className="navLeft" width={4}>
               <Segment>
-                <Nav team={team} teams={this.teamList} />
+                <Nav team={this.state.team} teams={this.state.teamList} />
               </Segment>
             </Grid.Column>
             <Grid.Column className="contentMain " width={12}>

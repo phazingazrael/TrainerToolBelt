@@ -23,7 +23,7 @@ class Nav extends React.Component {
     const body = await response.text();
 
   if (response.status !== 200) throw Error(body.message);
-      console.log("getTeams " + body);
+      //console.log("getTeams " + body);
     return body;
     };
  
@@ -56,15 +56,14 @@ class Nav extends React.Component {
         //this.state.teamList.push(this.team);
         console.log("this.state.team: "+JSON.stringify(this.state.team));
       })
-      .catch(err => console.log(err));
-      
+      .catch(err => console.log(err));      
   }
 
   
     
   render() {
     console.log("TEAM " + JSON.stringify(this.state.teamList));
-    const items = this.state.teamList.map(function(item){
+    const TeamList = this.state.teamList.map(function(item){
       return <li name={item.id} key={item.id}> {item.id} </li>;
     });    
     return (
@@ -74,7 +73,7 @@ class Nav extends React.Component {
           <div className="teamItem">
             test
             <ul>
-              {items}
+              {TeamList}
             </ul>
           </div>
         </div>
