@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../App.css";
 import "semantic-ui-css/semantic.min.css";
 import { Grid, Segment } from "semantic-ui-react";
-import Nav from "./nav";
+import Nav from "./nav.js";
 
 //const uuidv4 = require("uuid/v4");
 

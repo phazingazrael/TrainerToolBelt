@@ -74,9 +74,11 @@ app.post("/api/teams", (req, res) => {
 
 app.delete("/api/teams", (req, res) => {
   console.log(req.body);
-  teamsDb.del("teams", req.body, function(err){
-    console.log("teams deleted");
-  });
+  teamsDb.del("teams", function (err) {
+    if (err)
+      // handle I/O or other error
+      console.log(err)
+  })
 })
 
 app.post("/api/world", (req, res) => {

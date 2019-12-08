@@ -68,6 +68,22 @@ class Nav extends React.Component {
     return body;
   };
 
+  calcHeight =() =>{
+    let winHeight = window.innerHeight;
+    let headHeight = document.getElementById("header").clientHeight;
+    let contentHeight = document.getElementById("content").clientHeight;
+    let navHeight = document.getElementById("nav").clientHeight;
+    let differenciate = (contentHeight - navHeight)/2;
+    let newHeight = ((winHeight - headHeight) + differenciate) - 60 +"px";
+    console.log(newHeight);
+    this.setState(prevState => {
+      let style = Object.assign({}, prevState.style);  // creating copy of state variable jasper
+      style.height = newHeight;                     // update the name property, assign a new value                 
+      return { style };                                 // return new object jasper object
+    })
+    //this.delTeams();
+  }
+
   componentDidMount() {
     this.getTeams()
       .then(res => {
@@ -85,21 +101,7 @@ class Nav extends React.Component {
         console.log("this.state.team: "+JSON.stringify(this.state.team));
       })
       .catch(err => console.log(err));      
-      let winHeight = window.innerHeight;
-      let headHeight = document.getElementById("header").clientHeight;
-      //console.log(headHeight);
-      let contentHeight = document.getElementById("content").clientHeight;
-      let navHeight = document.getElementById("nav").clientHeight;
-      let differenciate = (contentHeight - navHeight)/2;
-      //console.log("height difference between #content and @nav is "+differenciate+"px");
-      let newHeight = ((winHeight - headHeight) + differenciate) - 60 +"px";
-      console.log(newHeight);
-      this.setState(prevState => {
-        let style = Object.assign({}, prevState.style);  // creating copy of state variable jasper
-        style.height = newHeight;                     // update the name property, assign a new value                 
-        return { style };                                 // return new object jasper object
-      })
-      console.log(JSON.stringify(this.state.style));
+      this.calcHeight();
   }
 
   
@@ -111,7 +113,7 @@ class Nav extends React.Component {
       return (
         <Grid.Row className="teamIcon" id={item.id} name={item.id} key={item.id}>
           <Grid.Row>
-            <p>Testing Team</p>
+            <p>Testing Team<sup>X</sup></p>
           </Grid.Row>
           <Grid.Row>
           <Card.Group itemsPerRow={6}>
@@ -124,19 +126,26 @@ class Nav extends React.Component {
           </Card.Group>
           </Grid.Row>
         </Grid.Row>
-      ) ;      //<li name={item.id} key={item.id}> {item.id} </li>;
+      ) ;
     });    
+
     return (
       <div style={this.state.style}>
         <div className="teamActive">
-          <p>{this.state.team.id}</p>
+          <p>
+            Current Team:
+            <br/>
+            {this.state.team.id}
+          </p>
+        <button>
+          New Team 
+        </button>
         </div>
         <div className="teamList">
             
                 {TeamList}
             
           </div>
-        Thing to go here is nav side link with all teams
         <br />
         <button
           onClick={() => this.putTeams().then(this.getTeams())} 
