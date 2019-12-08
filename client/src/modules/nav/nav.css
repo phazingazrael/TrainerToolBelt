@@ -28,9 +28,20 @@
     padding: 15px;
 }
 
+/* overrides */
+
 .ui.card, .ui.cards > .card{
     flex-direction: row !important;
-    background: none;
-    border: none;
-    border-radius: 0px;
+    background: none !important;
+    border: 0px solid !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+
+.ui.six.cards{
+    margin-right: 0.25em !important;
+}
+
+.ui.card > .image, .ui.cards > .card > .image{
+    background: none !important;
 }

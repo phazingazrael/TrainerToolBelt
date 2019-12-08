@@ -31,6 +31,7 @@ class Nav extends React.Component {
     };
  
   putTeams = async () => {
+    this.setState({teams: this.state.teamList.push(this.state.team) });
     const location = window.location.hostname;
     const response = await fetch(
     `http://${location}:5000/api/teams/`, {
@@ -40,7 +41,7 @@ class Nav extends React.Component {
             'Content-Type': 'application/json'
         }
       ,
-      body: JSON.stringify(this.state.teamList)
+      body: this.state.teams
     });
     const body = await response.json();
 
@@ -68,7 +69,7 @@ class Nav extends React.Component {
     console.log("TEAM " + JSON.stringify(this.state.teamList));
     const TeamList = this.state.teamList.map(function(item){
       return (
-        <Grid.Row className="teamIcon" id={item.id} name={item.id}>
+        <Grid.Row key={item.id} className="teamIcon" id={item.id} name={item.id}>
           <Grid.Row>
             <p>Testing Team</p>
           </Grid.Row>

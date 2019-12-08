@@ -156,6 +156,24 @@ class Main extends Component {
     };
   }
 
+  putTeams = async () => {
+    this.setState({teams: this.state.teamList.push(this.state.team)});
+    const location = window.location.hostname;
+    const response = await fetch(
+    `http://${location}:5000/api/teams/`, {
+      method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+        }
+      ,
+      body: JSON.stringify(this.state.team)
+    });
+    const body = await response.json();
+
+    return body;
+  };
+
   getTeams = async () => {
     const location = window.location.hostname;
     const response = await fetch(
