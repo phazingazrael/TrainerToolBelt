@@ -3,18 +3,16 @@ import React from "react";
 
 const uuidv4 = require("uuid/v4");
 
-//var team = [];
-//var teams = [];
-//var teamList = [];
 
 //const TeamList = teamList;
 class Nav extends React.Component {
   constructor() {
     super();
-    this.state = {};
-    this.teamList = [];
-    //this.team = this.props.team;
-    this.teams = [];
+    this.state = {
+      teamList: [],
+      teams: [],
+      team:[]
+    };
   }
 
   getTeams = async () => {
@@ -39,7 +37,7 @@ class Nav extends React.Component {
             'Content-Type': 'application/json'
         }
       ,
-      body: JSON.stringify(this.teamList)
+      body: JSON.stringify(this.state.teamList)
     });
     const body = await response.json();
 
@@ -49,14 +47,14 @@ class Nav extends React.Component {
   componentDidMount() {
     this.getTeams()
       .then(res => {
-        this.teams = JSON.parse(res);
-        this.team = this.props.team;
-        this.team.id = uuidv4();
-        //console.log("component did mount, get teams data " + JSON.stringify(teams));
-        //this.teamList = teams.map();
-        this.teamList.push(this.teams);
-        this.teamList.push(this.team);
-        console.log(JSON.stringify(this.teamList));
+        //this.setState.teams = JSON.parse(res);
+        let tempTeam = this.props.team;
+        tempTeam.id = uuidv4();
+        this.setState({ team:this.props.team});
+        this.setState({teamList:JSON.parse(res)});
+        //this.state.teamList.push(this.teams);
+        //this.state.teamList.push(this.team);
+        console.log("this.state.team: "+JSON.stringify(this.state.team));
       })
       .catch(err => console.log(err));
       
@@ -65,22 +63,20 @@ class Nav extends React.Component {
   
     
   render() {
-    //this.componentDidMount();
-    //this.team = this.props.team;
-    //this.teams = this.props.teams;
-    //console.log(JSON.stringify(this.props.team));
-    //this.props.team.id = uuidv4();
-    //this.props.team.Team[0].nick = "pushDaTeam";
-
-    //this.teamList.push({team});
-
-    console.log("TEAM " + JSON.stringify(this.teamList));
-    
+    console.log("TEAM " + JSON.stringify(this.state.teamList));
+    const items = this.state.teamList.map(function(item){
+      return <li name={item.id} key={item.id}> {item.id} </li>;
+    });    
     return (
       <div>
-        <p>{this.props.team.id}</p>
+        <p>{this.state.team.id}</p>
         <div className="teamActive">
-          <div className="teamItem">test</div>
+          <div className="teamItem">
+            test
+            <ul>
+              {items}
+            </ul>
+          </div>
         </div>
         Thing to go here is nav side link with all teams
         <br />
