@@ -13,22 +13,25 @@ class Pokedex extends React.Component {
       .then(res => {
         console.log("receiving pokedex");
         console.log(res);
-        this.setState({ pokedex: JSON.parse(res) });
+        this.setState({ pokedex: res});
       })
       .catch(err => console.log(err));
   }
 
   getDex = async () => {
-    const response = await fetch("/api/pokedex");
-    const body = await response.json();
+    const location = window.location.hostname;
+    const response = await fetch(
+    `http://${location}:5000/api/pokedex/`, {
+      method: 'GET'});
+    const body = await response.text();
 
     if (response.status !== 200) throw Error(body.message);
-
+      //console.log("getTeams " + body);
     return body;
-  };
+    };
 
   render() {
-    return( <div>{JSON.stringify(this.state.pokedex)}</div>);
+    return( <div>{this.state.pokedex}</div>);
   }
 }
 
