@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav.css";
 import "semantic-ui-css/semantic.min.css";
-import { Grid, Segment } from "semantic-ui-react";
+import { Grid, Card } from "semantic-ui-react";
 
 
 const uuidv4 = require("uuid/v4");
@@ -68,44 +68,33 @@ class Nav extends React.Component {
     console.log("TEAM " + JSON.stringify(this.state.teamList));
     const TeamList = this.state.teamList.map(function(item){
       return (
-        <Grid className="teamIcon" id={item.id} name={item.id}>
+        <Grid.Row className="teamIcon" id={item.id} name={item.id}>
           <Grid.Row>
             <p>Testing Team</p>
           </Grid.Row>
-          <Grid.Row columns={6}>
-          <Grid.Column>
-              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
-            </Grid.Column>
-            <Grid.Column>
-              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
-            </Grid.Column>
-            <Grid.Column>
-              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
-            </Grid.Column>
-            <Grid.Column>
-              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
-            </Grid.Column>
-            <Grid.Column>
-              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
-            </Grid.Column>
-            <Grid.Column>
-              <img alt="team Member Icon" src={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"}/>
-            </Grid.Column>
+          <Grid.Row>
+          <Card.Group itemsPerRow={6}>
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          </Card.Group>
           </Grid.Row>
-        </Grid>
+        </Grid.Row>
       ) ;      //<li name={item.id} key={item.id}> {item.id} </li>;
     });    
     return (
       <div>
-        <p>{this.state.team.id}</p>
         <div className="teamActive">
-          <div className="teamItem">
-            test
-            <ul>
-              {TeamList}
-            </ul>
-          </div>
+          <p>{this.state.team.id}</p>
         </div>
+        <div className="teamList">
+            <Grid>
+                {TeamList}
+            </Grid>
+          </div>
         Thing to go here is nav side link with all teams
         <br />
         <button
