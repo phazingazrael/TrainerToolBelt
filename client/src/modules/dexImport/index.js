@@ -1,6 +1,6 @@
 import React from "react";
 
-class Index extends React.Component {
+class Pokedex extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -8,12 +8,12 @@ class Index extends React.Component {
     };
   }
 
-  componentDidMount(pokedex) {
+  componentDidMount() {
     this.getDex()
       .then(res => {
         console.log("receiving pokedex");
         console.log(res);
-        this.setState({ pokedex: res });
+        this.setState({ pokedex: JSON.parse(res) });
       })
       .catch(err => console.log(err));
   }
@@ -28,8 +28,8 @@ class Index extends React.Component {
   };
 
   render() {
-    return <p>{this.state.pokedex}</p>;
+    return( <div>{JSON.stringify(this.state.pokedex)}</div>);
   }
 }
 
-export default Index;
+export default Pokedex;
