@@ -16,7 +16,9 @@ class Nav extends React.Component {
       teamList: [],
       teams: [],
       team:{},
-      height: "",
+      style: {
+        height: "200px"
+      },
     };
   }
 
@@ -52,6 +54,20 @@ class Nav extends React.Component {
     return body;
   };
 
+  delTeams = async () => {
+    console.log("deleting teams.")
+    const location = window.location.hostname;
+    const response = await fetch(
+    `http://${location}:5000/api/teams/`, {
+      method: 'delete',
+      body: JSON.stringify(this.state.teams)
+    });
+    const body = await response.json();
+
+    this.componentDidMount();
+    return body;
+  };
+
   componentDidMount() {
     this.getTeams()
       .then(res => {
@@ -76,9 +92,14 @@ class Nav extends React.Component {
       let navHeight = document.getElementById("nav").clientHeight;
       let differenciate = (contentHeight - navHeight)/2;
       //console.log("height difference between #content and @nav is "+differenciate+"px");
-      let newHeight = ((winHeight - headHeight) + differenciate) - 30 +"px";
-      this.setState({height: newHeight});
-      console.log(this.state.height);
+      let newHeight = ((winHeight - headHeight) + differenciate) - 60 +"px";
+      console.log(newHeight);
+      this.setState(prevState => {
+        let style = Object.assign({}, prevState.style);  // creating copy of state variable jasper
+        style.height = newHeight;                     // update the name property, assign a new value                 
+        return { style };                                 // return new object jasper object
+      })
+      console.log(JSON.stringify(this.state.style));
   }
 
   
@@ -106,7 +127,7 @@ class Nav extends React.Component {
       ) ;      //<li name={item.id} key={item.id}> {item.id} </li>;
     });    
     return (
-      <div >
+      <div style={this.state.style}>
         <div className="teamActive">
           <p>{this.state.team.id}</p>
         </div>

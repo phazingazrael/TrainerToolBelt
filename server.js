@@ -72,6 +72,13 @@ app.post("/api/teams", (req, res) => {
   );
 });
 
+app.delete("/api/teams", (req, res) => {
+  console.log(req.body);
+  teamsDb.del("teams", req.body, function(err){
+    console.log("teams deleted");
+  });
+})
+
 app.post("/api/world", (req, res) => {
   console.log(req.body);
   res.send(

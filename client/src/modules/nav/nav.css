@@ -10,7 +10,8 @@
 
 .teamList {
     overflow: auto;
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
+    height: 80%;
 }
 
 .teamIcon{
@@ -35,6 +36,10 @@
 }
 
 /* overrides */
+
+.navLeft .ui.segment {
+    padding-right: 0px;
+}
 
 .ui.card, .ui.cards > .card{
     flex-direction: row !important;
