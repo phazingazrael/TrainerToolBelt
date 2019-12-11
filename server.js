@@ -43,35 +43,29 @@ var dex = oakdexPokedex.allPokemon();
 
 // API calls
 app.get("/api/pokedex", (req, res) => {
-  dexDb.open();
   dexDb.get("dex", function(err, pokedex) {
     res.send(pokedex);
-    //console.log(pokedex);
+    console.log(pokedex);
   });
-  dexDb.close();
+  
   console.log("sending pokedex");
 });
 
 app.post("/api/pokedex", (req, res) => {
   console.log("receiving pokedex");
   console.log(req.body);
-  dexDb.open();
   dexDb.put("dex", req.body, function(err){});
-  dexDb.close();
 });
 
 app.get("/api/teams", (req, res) => {
   console.log("sending teams");
-  teamsDb.open();
   teamsDb.get("teams", function(err,teams){
     res.send(teams);
   });
-  teamsDb.close();
 });
 
 app.post("/api/teams", (req, res) => {
   console.log(req.body);
-  teamsDb.open();
   teamsDb.put("teams", req.body, function(err) {
     teamsDb.get("teams", function(err, teams) {
       console.log(JSON.stringify(teams));
@@ -81,18 +75,15 @@ app.post("/api/teams", (req, res) => {
   res.send(
     `${JSON.stringify(req.body)}`
   );
-  teamsDb.close();
 });
 
 app.delete("/api/teams", (req, res) => {
   console.log(req.body);
-  teamsDb.open();
   teamsDb.del("teams", function (err) {
     if (err)
       // handle I/O or other error
       console.log(err)
   });
-  teamsDb.close();
 })
 
 app.post("/api/world", (req, res) => {

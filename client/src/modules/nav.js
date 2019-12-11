@@ -26,7 +26,7 @@ class Nav extends React.Component {
   getTeams = async () => {
     const location = window.location.hostname;
     const response = await fetch(
-    `http://${location}:5000/api/teams/`, {
+    `http://${location}:5000/api/teams`, {
       method: 'GET'});
     const body = await response.text();
 
@@ -38,7 +38,7 @@ class Nav extends React.Component {
   putTeams = async () => {
     const location = window.location.hostname;
     const response = await fetch(
-    `http://${location}:5000/api/teams/`, {
+    `http://${location}:5000/api/teams`, {
       method: 'POST',
         headers: {
             Accept: 'application/json',
@@ -54,10 +54,9 @@ class Nav extends React.Component {
   };
 
   delTeams = async () => {
-//    console.log("deleting teams.")
     const location = window.location.hostname;
     const response = await fetch(
-    `http://${location}:5000/api/teams/`, {
+    `http://${location}:5000/api/teams`, {
       method: 'delete',
       body: JSON.stringify(this.state.teams)
     });

@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
+import PreloadImage from "react-preload-image";
 
 class Pokedex extends React.Component {
   constructor() {
@@ -13,12 +14,12 @@ class Pokedex extends React.Component {
     this.getDex()
       .then(res => {
         console.log(res);
-        var PokeDex = JSON.parse(res);
-        console.log(PokeDex);
+        //var PokeDex = JSON.parse(res);
+        //console.log(PokeDex);
         //sorting start
-        PokeDex.sort((a, b) => a.national_id - b.national_id);
+        //PokeDex.sort((a, b) => a.national_id - b.national_id);
         //sorting end
-        this.setState({ pokedex: PokeDex});
+        this.setState({ pokedex: JSON.parse(res)});
       })
       .catch(err => console.log(err));
   }
@@ -26,7 +27,7 @@ class Pokedex extends React.Component {
 
   getDex = async () => {
     const location = window.location.hostname;
-    const response = await fetch(`http://${location}:5000/api/pokedex/`, {
+    const response = await fetch(`http://${location}:5000/api/pokedex`, {
       method: "GET"
     });
     const body = await response.text();
@@ -39,8 +40,15 @@ class Pokedex extends React.Component {
     render() {
       
       const DexList = this.state.pokedex.map(function(item){
+        //let imgSrc = "./img/miniDex/"+item.national_id+".png";
         return (
-          <Card key={item.national_id} id={item.national_id+"-"+item.names.en} image={"./img/miniDex/"+item.national_id+".png"}/>
+          <Card key={item.national_id} id={item.national_id+"-"+item.names.en}>
+            <PreloadImage
+              className="someClass"
+              src='./img/miniDex/{item.national_id}.png'
+              lazy
+            />
+          </Card>
         ) ;
       });    
   

@@ -35,6 +35,12 @@
     min-width: 200px;
 }
 
+sup {
+    top: 0.7em;
+    float: right !important;
+    right: 0.6em;
+}
+
 /* overrides */
 
 .navLeft .ui.segment {
