@@ -24,8 +24,17 @@ class Pokedex extends React.Component {
   componentDidMount() {
     this.getDex()
       .then(res => {
-        //console.log("receiving pokedex");
+        
+        //sorting?
         //console.log(res);
+        //var data = res; // assign your data here
+        //var arr = [];
+        //for(let key in data){
+        //  data[key]["national_id"] = key;
+        //  arr.push(data[key]);
+        //}
+        //this.setState({pokedex:arr})
+        //sorting? end?
         this.setState({ pokedex: JSON.parse(res)});
       })
       .catch(err => console.log(err));
@@ -47,9 +56,7 @@ class Pokedex extends React.Component {
 
     render() {
       console.log("dex " + JSON.stringify(this.state.pokedex));
-      this.state.pokedex.sort(function (a, b) {
-        return (a.national_id > b.national_id) ? 1 : ((b.national_id > a.national_id) ? -1 : 0);
-      });
+      
       const DexList = this.state.pokedex.map(function(item){
         
         //if (item.national_id > 0 && item.national_id < 10) {
