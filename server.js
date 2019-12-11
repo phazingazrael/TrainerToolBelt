@@ -45,7 +45,7 @@ var dex = oakdexPokedex.allPokemon();
 app.get("/api/pokedex", (req, res) => {
   dexDb.get("dex", function(err, pokedex) {
     res.send(pokedex);
-    console.log(pokedex);
+    //console.log(pokedex);
   });
   
   console.log("sending pokedex");

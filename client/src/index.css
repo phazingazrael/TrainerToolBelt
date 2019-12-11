@@ -16,6 +16,17 @@ code {
   color: #000000;
 }
 
+.dexList {
+  border: 1px solid;
+  max-height: 50%;
+  overflow: hidden;
+}
+
+.ui.scrolling.modal.transition.visible.active {
+  max-height: 90%;
+  overflow: auto;
+}
+
 .containment{
   border: 1px solid;
 }

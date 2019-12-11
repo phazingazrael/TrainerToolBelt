@@ -40,16 +40,12 @@ class Pokedex extends React.Component {
       
       const DexList = this.state.pokedex.map(function(item){
         return (
-          
-          //<Card key={item.national_id} id={item.national_id+"-"+item.names.en} image={"./img/miniDex/"+item.national_id+".png"}/>
-          <div key={item.national_id}>
-            {item.national_id}
-          </div>
+          <Card key={item.national_id} id={item.national_id+"-"+item.names.en} image={"./img/miniDex/"+item.national_id+".png"}/>
         ) ;
       });    
   
       return (
-          <Card.Group itemsPerRow={6}>
+          <Card.Group itemsPerRow={6} className="dexList">
             {DexList}
           </Card.Group> 
       );
