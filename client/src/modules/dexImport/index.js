@@ -9,22 +9,47 @@ class Pokedex extends React.Component {
     };
   }
 
-  stripFillerData() {
-    /*
-      data structure
-    names {4}, national_id, types, abilities, gender_ratios, , catch_rate, egg_groups, hatch_time,
-    height_us, , height_eu, weight_us, weight_eu, base_exp_yield, leveling_rate, ev_yield, color,
-    base_friendship, base_stats, evolutions, categories, kanto_id, johto_id, hoenn_id, sinnoh_id,
-    unova_id, kalos_id, alola_id, mega_evolutions, evolution_from, variations, pokedex_entries,
-    pokeathlon_stats, ultra_alola_id, move_learnsets
-    */
-    console.log("pre strip filler data " + this.state.pokedex);
-  }
-
   componentDidMount() {
     this.getDex()
       .then(res => {
-        
+        var PokeDex = JSON.parse(res);
+        console.log("pre-stripping data "+JSON.stringify(PokeDex));
+        PokeDex.map(function( dexItem ){
+          delete dexItem.abilities;
+          delete dexItem.gender_ratios;
+          delete dexItem.catch_rate;
+          delete dexItem.egg_groups;
+          delete dexItem.hatch_time;
+          delete dexItem.height_us;
+          delete dexItem.height_eu;
+          delete dexItem.weight_us;
+          delete dexItem.weight_eu;
+          delete dexItem.base_exp_yield;
+          delete dexItem.leveling_rate;
+          delete dexItem.ev_yield;
+          delete dexItem.color;
+          delete dexItem.base_friendship;
+          delete dexItem.base_stats;
+          delete dexItem.evolutions;
+          delete dexItem.categories;
+          delete dexItem.kanto_id;
+          delete dexItem.johto_id;
+          delete dexItem.hoenn_id;
+          delete dexItem.sinnoh_id;
+          delete dexItem.unova_id;
+          delete dexItem.kalos_id;
+          delete dexItem.alola_idv
+          delete dexItem.mega_evolutions;
+          delete dexItem.evolution_from;
+          delete dexItem.variations;
+          delete dexItem.pokedex_entries;
+          delete dexItem.pokeathlon_stats;
+          delete dexItem.ultra_alola_id;
+          delete dexItem.move_learnsets;
+          //console.log(dexItem);
+          return dexItem;
+        })
+        console.log(PokeDex);
         //sorting?
         //console.log(res);
         //var data = res; // assign your data here
@@ -35,11 +60,9 @@ class Pokedex extends React.Component {
         //}
         //this.setState({pokedex:arr})
         //sorting? end?
-        this.setState({ pokedex: JSON.parse(res)});
+        this.setState({ pokedex: PokeDex});
       })
       .catch(err => console.log(err));
-    console.log('start strip data');
-    this.stripFillerData();
   }
 
   getDex = async () => {
@@ -55,7 +78,6 @@ class Pokedex extends React.Component {
   };
 
     render() {
-      console.log("dex " + JSON.stringify(this.state.pokedex));
       
       const DexList = this.state.pokedex.map(function(item){
         
