@@ -38,7 +38,7 @@ class Pokedex extends React.Component {
           delete dexItem.sinnoh_id;
           delete dexItem.unova_id;
           delete dexItem.kalos_id;
-          delete dexItem.alola_idv
+          delete dexItem.alola_id;
           delete dexItem.mega_evolutions;
           delete dexItem.evolution_from;
           delete dexItem.variations;
@@ -51,18 +51,29 @@ class Pokedex extends React.Component {
         })
         console.log(PokeDex);
         //sorting?
-        var data = PokeDex; // assign your data here
-        var arr = [];
-        for(let key in data){
-          data[key]["national_id"] = key;
-          arr.push(data[key]);
-        }
-        this.setState({pokedex:arr})
+        PokeDex.sort((a, b) => a.national_id - b.national_id);
+        const putDex = async () => {
+          const location = window.location.hostname;
+          const response = await fetch(
+          `http://${location}:5000/api/pokedex/`, {
+            method: 'POST',
+              headers: {
+                  Accept: 'application/json',
+                  'Content-Type': 'application/json'
+              }
+            ,
+            body: JSON.stringify(PokeDex)
+          });
+          const body = await response.text();
+          return body;
+        };
         //sorting? end?
-        //this.setState({ pokedex: PokeDex});
+        this.setState({ pokedex: PokeDex});
+        putDex();
       })
       .catch(err => console.log(err));
   }
+
 
   getDex = async () => {
     const location = window.location.hostname;
@@ -87,7 +98,10 @@ class Pokedex extends React.Component {
         //}
         return (
           
-          <Card key={item.national_id} id={item.national_id+"-"+item.names.en} image={"./img/miniDex/"+item.national_id+".png"}/>
+          //<Card key={item.national_id} id={item.national_id+"-"+item.names.en} image={"./img/miniDex/"+item.national_id+".png"}/>
+          <div key={item.national_id}>
+            {item.national_id}
+          </div>
         ) ;
       });    
   
