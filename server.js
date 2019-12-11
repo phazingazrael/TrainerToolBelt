@@ -11,7 +11,7 @@ var db = level("./db");
 //var teamsDb = db.sublevel("teams");
 var teamsDb = sub(db, "teams", { valueEncoding: 'json' });
 
-//var dexDb = db.sublevel("pokedex");
+//var dexDb = db.sublevel("dex");
 var dexDb = sub(db, "dex" , { valueEncoding: 'json' })
 // Database config ends
 
@@ -20,7 +20,7 @@ oakdexPokedex = require("oakdex-pokedex");
 const app = express();
 const port = process.env.PORT || 5000;
 
-var whitelist = ['http://localhost:5000', 'http://localhost:3000']
+var whitelist = ['http://localhost:5000', 'http://localhost:3000'];
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
@@ -43,31 +43,25 @@ var dex = oakdexPokedex.allPokemon();
 
 // API calls
 app.get("/api/pokedex", (req, res) => {
-  dexDb.get("pokedex", function(err, pokedex) {
-    //res.send(pokedex);
+  dexDb.get("dex", function(err, pokedex) {
+    res.send(pokedex);
     console.log(pokedex);
   });
   
   console.log("sending pokedex");
-  //res.send(dex);
 });
 
 app.post("/api/pokedex", (req, res) => {
   console.log("receiving pokedex");
   console.log(req.body);
-  dexDb.put("pokedex", req.body, function(err){
-    //console.log(JSON.stringify(req.body));
-  })
-  //dexDb.clear();
-})
+  dexDb.put("dex", req.body, function(err){});
+});
 
 app.get("/api/teams", (req, res) => {
   console.log("sending teams");
   teamsDb.get("teams", function(err,teams){
-    //console.log(JSON.stringify(teams));
     res.send(teams);
-  })
-  
+  });
 });
 
 app.post("/api/teams", (req, res) => {
@@ -89,7 +83,7 @@ app.delete("/api/teams", (req, res) => {
     if (err)
       // handle I/O or other error
       console.log(err)
-  })
+  });
 })
 
 app.post("/api/world", (req, res) => {

@@ -1,0 +1,27 @@
+-------------------- Auto-Git Log --------------------
+		Tue Dec 10 2019 23:22:06 GMT-0700 (Mountain Standard Time)
+------------------------------------------------------
+
+Modified files:
+* client/src/modules/dexImport/index.js
+* db/CURRENT
+* db/LOG
+* db/LOG.old
+* server.js
+
+
+Created files:
+* .autogit/logs/log-10-11-2019-22-52-1.txt
+
+
+Deleted files:
+* db/000019.ldb
+* db/001404.ldb
+* db/dex/000003.log
+* db/dex/CURRENT
+* db/dex/LOCK
+* db/dex/LOG
+* db/dex/MANIFEST-000002
+
+
+Renamed files:
