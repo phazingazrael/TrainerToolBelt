@@ -51,16 +51,15 @@ class Pokedex extends React.Component {
         })
         console.log(PokeDex);
         //sorting?
-        //console.log(res);
-        //var data = res; // assign your data here
-        //var arr = [];
-        //for(let key in data){
-        //  data[key]["national_id"] = key;
-        //  arr.push(data[key]);
-        //}
-        //this.setState({pokedex:arr})
+        var data = PokeDex; // assign your data here
+        var arr = [];
+        for(let key in data){
+          data[key]["national_id"] = key;
+          arr.push(data[key]);
+        }
+        this.setState({pokedex:arr})
         //sorting? end?
-        this.setState({ pokedex: PokeDex});
+        //this.setState({ pokedex: PokeDex});
       })
       .catch(err => console.log(err));
   }
