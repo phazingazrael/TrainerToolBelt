@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
-import PreloadImage from "react-preload-image";
 
 class Pokedex extends React.Component {
   constructor() {
@@ -40,15 +39,8 @@ class Pokedex extends React.Component {
     render() {
       
       const DexList = this.state.pokedex.map(function(item){
-        //let imgSrc = "./img/miniDex/"+item.national_id+".png";
         return (
-          <Card key={item.national_id} id={item.national_id+"-"+item.names.en}>
-            <PreloadImage
-              className="someClass"
-              src='./img/miniDex/{item.national_id}.png'
-              lazy
-            />
-          </Card>
+          <Card key={item.national_id} id={item.national_id+"-"+item.names.en} image={"./img/miniDex/"+item.national_id+".png"}/>
         ) ;
       });    
   
