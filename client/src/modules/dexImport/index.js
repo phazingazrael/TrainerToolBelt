@@ -12,8 +12,10 @@ class Pokedex extends React.Component {
   componentDidMount() {
     this.getDex()
       .then(res => {
+        console.log(res);
         var PokeDex = JSON.parse(res);
-        console.log("pre-stripping data "+JSON.stringify(PokeDex));
+        //console.log("pre-stripping data "+JSON.stringify(PokeDex));
+        /*
         PokeDex.map(function( dexItem ){
           delete dexItem.abilities;
           delete dexItem.gender_ratios;
@@ -49,6 +51,7 @@ class Pokedex extends React.Component {
           //console.log(dexItem);
           return dexItem;
         })
+        */
         console.log(PokeDex);
         //sorting?
         PokeDex.sort((a, b) => a.national_id - b.national_id);
@@ -69,7 +72,7 @@ class Pokedex extends React.Component {
         };
         //sorting? end?
         this.setState({ pokedex: PokeDex});
-        putDex();
+        //putDex();
       })
       .catch(err => console.log(err));
   }
@@ -83,7 +86,7 @@ class Pokedex extends React.Component {
     const body = await response.text();
 
     if (response.status !== 200) throw Error(body.message);
-    //console.log("getTeams " + body);
+    console.log("getDex " +body);
     return body;
   };
 

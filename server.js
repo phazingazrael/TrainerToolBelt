@@ -43,21 +43,22 @@ var dex = oakdexPokedex.allPokemon();
 
 // API calls
 app.get("/api/pokedex", (req, res) => {
-  //dexDb.get("pokedex", function(err, pokedex) {
-  //console.log(pokedex);
-  //});
-  //res.send(datadex);
+  dexDb.get("pokedex", function(err, pokedex) {
+    //res.send(pokedex);
+    console.log(pokedex);
+  });
+  
   console.log("sending pokedex");
-  res.send(dex);
+  //res.send(dex);
 });
 
 app.post("/api/pokedex", (req, res) => {
   console.log("receiving pokedex");
   console.log(req.body);
   dexDb.put("pokedex", req.body, function(err){
-    console.log(json.stringify(pokedex));
+    //console.log(JSON.stringify(req.body));
   })
-  dexDb.clear();
+  //dexDb.clear();
 })
 
 app.get("/api/teams", (req, res) => {
