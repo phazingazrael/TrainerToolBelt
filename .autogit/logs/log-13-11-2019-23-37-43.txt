@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Fri Dec 13 2019 23:37:43 GMT-0700 (Mountain Standard Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-13-11-2019-23-7-33.txt
+
+
+Deleted files:
+* client/public/img/miniDex/803.png
+* client/public/img/miniDex/804.png
+* client/public/img/miniDex/805.png
+* client/public/img/miniDex/806.png
+* client/public/img/miniDex/807.png
+* client/public/img/miniDex/808.png
+* client/public/img/miniDex/809.png
+
+
+Renamed files:

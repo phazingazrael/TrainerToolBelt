@@ -101,19 +101,25 @@ class Nav extends React.Component {
     
   render() {
     const TeamList = this.state.teamList.map(function(item){
+      console.log("each team is here "+JSON.stringify(item))
       return (
+        {if (item.Team[0].id === "" || item.Team[0].id === undefined){
+          item.Team[0].id = 0
+        } else {
+          return item.Team[0].id
+        }}
         <Grid.Row className="teamIcon" id={item.id} name={item.id} key={item.id}>
           <Grid.Row>
             <p>Testing Team<sup>X</sup></p>
           </Grid.Row>
           <Grid.Row>
           <Card.Group itemsPerRow={6}>
-          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
-          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
-          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
-          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
-          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
-          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card image={"./img/miniDex/"+item.Team[0].id+"-fs8.png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
+          <Card image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
           </Card.Group>
           </Grid.Row>
         </Grid.Row>
