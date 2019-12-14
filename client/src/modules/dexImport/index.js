@@ -40,7 +40,13 @@ class Pokedex extends React.Component {
       
       const DexList = this.state.pokedex.map(function(item){
         return (
-          <Card key={item.national_id} id={item.national_id+"-"+item.names.en} image={"./img/miniDex/"+item.national_id+".png"}/>
+          <Card key={item.national_id}>
+            <LazyLoadImage
+              alt={item.name.en}
+              effect="opacity"
+              src={"./img/miniDex/"+item.national_id+".png"} // use normal <img> attributes as props
+              />
+          </Card>
         ) ;
       });    
   

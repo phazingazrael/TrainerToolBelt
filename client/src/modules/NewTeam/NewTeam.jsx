@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Header, Card, Modal, Grid } from 'semantic-ui-react'
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 import Pokedex from "../dexImport";
 
 const NewTeam = () => (
