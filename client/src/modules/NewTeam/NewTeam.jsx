@@ -14,7 +14,6 @@ const NewTeam = () => (
           <Grid.Column width={13} id="contentHeight">
             <Header id="newTeamModalHeader">Select first team member</Header>
             <Pokedex/>
-            <p>Is it okay to use this photo?</p>
           </Grid.Column>
         </Grid.Row>
       </Grid>

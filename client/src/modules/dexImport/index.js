@@ -46,7 +46,7 @@ class Pokedex extends React.Component {
     let modalHeight = document.getElementById("newTeamModal").clientHeight;
     let differentiate = (winHeight - modalHeight)/2;
     let headHeight = document.getElementById("newTeamModalHeader").clientHeight;
-    let newHeight = (((winHeight - modalHeight) + differentiate)/2)  +"px";
+    let newHeight = (((winHeight - modalHeight) + differentiate)/2)-10  +"px";
     let contHeight = (newHeight+headHeight) + "px";
     this.setState(prevState => {
       let style = Object.assign({}, prevState.style);   // creating copy of state variable style
@@ -61,16 +61,13 @@ class Pokedex extends React.Component {
       
       const DexList = this.state.pokedex.map(function(item){
         return (
-          <Card key={item.national_id}>
-            {item.national_id}
-            {/*
+          <Card key={item.national_id} className="dexItem">
             <LazyLoadImage
-              className="dexItem"
+              width="50px"
               alt={item.names.en}
               effect="blur"
               src={"./img/miniDex/"+item.national_id+".png"} // use normal <img> attributes as props
               />
-            */}
           </Card>
         ) ;
       });    

@@ -21,6 +21,14 @@ code {
   overflow: auto;
 }
 
+.dexList > .ui.card{
+  cursor: pointer;
+}
+
+.dexList > .ui.card > img{
+  margin: 0px auto;
+}
+
 .ui.scrolling.modal.transition.visible.active {
   max-height: 90%;
   overflow: auto;
