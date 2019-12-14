@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Fri Dec 13 2019 21:37:16 GMT-0700 (Mountain Standard Time)
+------------------------------------------------------
+
+Modified files:
+* client/src/modules/NewTeam/NewTeam.jsx
+* client/src/modules/dexImport/index.js
+* db/CURRENT
+* db/LOG
+* db/LOG.old
+* package.json
+* yarn.lock
+
+
+Created files:
+* .autogit/logs/log-11-11-2019-1-22-35.txt
+
+
+Deleted files:
+
+
+Renamed files:

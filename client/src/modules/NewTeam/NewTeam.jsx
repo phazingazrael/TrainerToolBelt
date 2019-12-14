@@ -1,10 +1,9 @@
 import React from 'react'
 import { Button, Header, Card, Modal, Grid } from 'semantic-ui-react'
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
 import Pokedex from "../dexImport";
 
 const NewTeam = () => (
-  <Modal trigger={<Button>New Team </Button>} centered={false}>
+  <Modal id="newTeamModal" trigger={<Button>New Team </Button>} centered={false}>
     <Modal.Header>Select a Photo</Modal.Header>
     <Modal.Content image>
       <Grid>

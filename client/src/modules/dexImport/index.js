@@ -1,11 +1,15 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 class Pokedex extends React.Component {
   constructor() {
     super();
     this.state = {
-      pokedex: []
+      pokedex: [],
+      style:{
+        height:''
+      }
     };
   }
 
@@ -36,16 +40,32 @@ class Pokedex extends React.Component {
     return body;
   };
 
+  calcHeight =() =>{
+    let winHeight = window.innerHeight;
+    let modalHeight = document.getElementById("newTeamModal").clientHeight;
+    let differentiate = (winHeight - modalHeight)/2;
+    let newHeight = ((winHeight - modalHeight) + differentiate) +"px";
+    this.setState(prevState => {
+      let style = Object.assign({}, prevState.style);   // creating copy of state variable style
+      style.height = newHeight; 
+      console.log(style.height)                        // update the name property, assign a new value                 
+      return { style };                                 // return new object style object
+    })
+  }
+
     render() {
       
       const DexList = this.state.pokedex.map(function(item){
         return (
           <Card key={item.national_id}>
+            /*
             <LazyLoadImage
-              alt={item.name.en}
-              effect="opacity"
+              className="dexItem"
+              alt={item.names.en}
+              effect="blur"
               src={"./img/miniDex/"+item.national_id+".png"} // use normal <img> attributes as props
               />
+              */
           </Card>
         ) ;
       });    

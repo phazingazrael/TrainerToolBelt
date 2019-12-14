@@ -78,7 +78,6 @@ class Nav extends React.Component {
       style.height = newHeight;                         // update the name property, assign a new value                 
       return { style };                                 // return new object style object
     })
-    //this.delTeams();
   }
 
   componentDidMount() {
