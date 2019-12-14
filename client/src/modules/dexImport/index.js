@@ -25,6 +25,7 @@ class Pokedex extends React.Component {
         this.setState({ pokedex: JSON.parse(res)});
       })
       .catch(err => console.log(err));
+      this.calcHeight();
   }
 
 
@@ -44,13 +45,16 @@ class Pokedex extends React.Component {
     let winHeight = window.innerHeight;
     let modalHeight = document.getElementById("newTeamModal").clientHeight;
     let differentiate = (winHeight - modalHeight)/2;
-    let newHeight = ((winHeight - modalHeight) + differentiate) +"px";
+    let headHeight = document.getElementById("newTeamModalHeader").clientHeight;
+    let newHeight = (((winHeight - modalHeight) + differentiate)/2)  +"px";
+    let contHeight = (newHeight+headHeight) + "px";
     this.setState(prevState => {
       let style = Object.assign({}, prevState.style);   // creating copy of state variable style
       style.height = newHeight; 
       console.log(style.height)                        // update the name property, assign a new value                 
       return { style };                                 // return new object style object
-    })
+    });
+    console.log(contHeight);
   }
 
     render() {
@@ -58,20 +62,21 @@ class Pokedex extends React.Component {
       const DexList = this.state.pokedex.map(function(item){
         return (
           <Card key={item.national_id}>
-            /*
+            {item.national_id}
+            {/*
             <LazyLoadImage
               className="dexItem"
               alt={item.names.en}
               effect="blur"
               src={"./img/miniDex/"+item.national_id+".png"} // use normal <img> attributes as props
               />
-              */
+            */}
           </Card>
         ) ;
       });    
   
       return (
-          <Card.Group itemsPerRow={6} className="dexList">
+          <Card.Group itemsPerRow={6} className="dexList" style={this.state.style}>
             {DexList}
           </Card.Group> 
       );

@@ -11,8 +11,8 @@ const NewTeam = () => (
           <Grid.Column width={3}>
             <Card image={"./img/dex/"+Math.floor(Math.random() * 803)+".gif"} />
           </Grid.Column>
-          <Grid.Column width={13}>
-            <Header>Select first team member</Header>
+          <Grid.Column width={13} id="contentHeight">
+            <Header id="newTeamModalHeader">Select first team member</Header>
             <Pokedex/>
             <p>Is it okay to use this photo?</p>
           </Grid.Column>

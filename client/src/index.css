@@ -18,8 +18,7 @@ code {
 
 .dexList {
   border: 1px solid;
-  max-height: 50%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .ui.scrolling.modal.transition.visible.active {
