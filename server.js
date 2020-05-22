@@ -22,7 +22,7 @@ const port = process.env.PORT || 5000;
 
 var whitelist = ['http://localhost:5000', 'http://localhost:3000', 'http://45.15.25.239:5000', 'http://45.15.25.239:3000',  '45.15.25.239:5000', '45.15.25.239:3000'];
 var corsOptions = {
-	credentials: 'same-origin'
+	credentials: 'same-origin',
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
       callback(null, true)
