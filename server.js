@@ -30,7 +30,7 @@ var corsOptions = {
     //} else {
     //  callback(new Error('Not allowed by CORS'))
     //}
-  }
+  //}
 }
 app.use(cors(corsOptions));
 app.options('/api/teams', cors()) // enable pre-flight request
