@@ -31,7 +31,7 @@ class Pokedex extends React.Component {
 
   getDex = async () => {
     const location = window.location.hostname;
-    const response = await fetch(`http://${location}/api/pokedex`, {
+    const response = await fetch(`http://${location}:5000/api/pokedex`, {
       method: "GET"
     });
     const body = await response.text();
