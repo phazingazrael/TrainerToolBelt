@@ -46,12 +46,13 @@ var dex = oakdexPokedex.findPokemon(4);
 
 // API calls
 app.get("/api/pokedex", (req, res) => {
-  dexDb.get("dex", function(err, pokedex) {
-    res.send(pokedex);
-    console.log(pokedex);
-  });
+res.send(dex);
+//  dexDb.get("dex", function(err, pokedex) {
+//   res.send(pokedex);
+//    console.log(pokedex);
+//  });
   
-  console.log("sending pokedex");
+  console.log("sending pokedex "+dex);
 });
 
 app.post("/api/pokedex", (req, res) => {
