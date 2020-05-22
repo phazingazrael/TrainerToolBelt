@@ -30,9 +30,10 @@ var corsOptions = {
     }
   }
 }
+app.use(cors(corsOptions));
 app.options('/api/teams', cors()) // enable pre-flight request
 app.options('/api/pokedex', cors()) // enable pre-flight request
-app.use(cors(corsOptions));
+
 
 
 app.use(bodyParser.json({limit: '50mb', extended: true}))
