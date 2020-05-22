@@ -22,13 +22,14 @@ const port = process.env.PORT || 5000;
 
 var whitelist = ['http://localhost:5000', 'http://localhost:3000', 'http://45.15.25.239:5000', 'http://45.15.25.239:3000',  '45.15.25.239:5000', '45.15.25.239:3000'];
 var corsOptions = {
-	credentials: 'same-origin',
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
+  origin: ['http://localhost:5000', 'http://localhost:3000', 'http://45.15.25.239:5000', 'http://45.15.25.239:3000',  '45.15.25.239:5000', '45.15.25.239:3000']
+  
+  //function (origin, callback) {
+    //if (whitelist.indexOf(origin) !== -1) {
+    //  callback(null, true)
+    //} else {
+    //  callback(new Error('Not allowed by CORS'))
+    //}
   }
 }
 app.use(cors(corsOptions));
@@ -46,7 +47,7 @@ var dex = oakdexPokedex.findPokemon(4);
 // API calls
 app.get("/api/pokedex", (req, res) => {
   dexDb.get("dex", function(err, pokedex) {
-    res.send(JSON.parse(pokedex));
+    res.send(pokedex);
     console.log(pokedex);
   });
   
