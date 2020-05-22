@@ -39,8 +39,8 @@ app.options('/api/pokedex', cors()) // enable pre-flight request
 app.use(bodyParser.json({limit: '50mb', extended: true}))
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var dex = oakdexPokedex.allPokemon();
-//var dex = oakdexPokedex.findPokemon(4);
+//var dex = oakdexPokedex.allPokemon();
+var dex = oakdexPokedex.findPokemon(4);
 
 // API calls
 app.get("/api/pokedex", (req, res) => {
