@@ -24,6 +24,7 @@ const NewTeam = () => (
         </Grid.Row>
         <Grid.Row className="buPar">
           <div>
+            <span className="fltRgtSpacer">&nbsp;</span>
             <Button.Group floated="right">
               <Button color="green">Save Team</Button>
               <Button color="red">Cancel</Button>
