@@ -11,7 +11,7 @@ const NewTeam = () => (
           <Grid.Column width={3}>
             <Card image={"./img/dex/"+Math.floor(Math.random() * 803)+".gif"} />
           </Grid.Column>
-          <Grid.Column width={12} id="contentHeight">
+          <Grid.Column width={13} id="contentHeight">
             <Header id="newTeamModalHeader">Select first team member</Header>
             <Pokedex/>
           </Grid.Column>
@@ -19,6 +19,7 @@ const NewTeam = () => (
         <Grid.Row className='buPar'>
           <Button.Group floated='right'>
             <Button color='green'>Save Team</Button>
+            <Button color='red'>Cancel</Button>
           </Button.Group>
         </Grid.Row>
       </Grid>
