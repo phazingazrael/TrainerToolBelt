@@ -23,13 +23,15 @@ const NewTeam = () => (
           </Grid.Column>
         </Grid.Row>
         <Grid.Row className="buPar">
-          <div>
-            <span className="fltRgtSpacer">&nbsp;</span>
+          <Grid.Column width={14}>
+            &nbsp;
+          </Grid.Column>
+          <Grid.Column>
             <Button.Group floated="right">
               <Button color="green">Save Team</Button>
               <Button color="red">Cancel</Button>
             </Button.Group>
-          </div>
+          </Grid.Column>
         </Grid.Row>
       </Grid>
     </Modal.Content>
