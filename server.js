@@ -46,13 +46,18 @@ var dex = oakdexPokedex.allPokemon();
 
 // API calls
 app.get("/api/pokedex", (req, res) => {
-res.send(dex);
+  sortDexByID = (stringDex)=>{
+    return stringDex.sort(function(a,b) {
+      return b.national_id.toLowerCase() < a.national_id.toLowerCase();
+    });
+  };
+  res.send(sortDexByID());
 //  dexDb.get("dex", function(err, pokedex) {
 //   res.send(pokedex);
 //    console.log(pokedex);
 //  });
-  
-  console.log("sending pokedex "+dex);
+  console.log(sortDexByID());
+//  console.log("sending pokedex "+dex);
 });
 
 app.post("/api/pokedex", (req, res) => {
