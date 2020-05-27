@@ -51,12 +51,12 @@ app.get("/api/pokedex", (req, res) => {
       return b.national_id.toLowerCase() < a.national_id.toLowerCase();
     });
   };
-  res.send(sortDexByID());
+  res.send(sortDexByID);
 //  dexDb.get("dex", function(err, pokedex) {
 //   res.send(pokedex);
 //    console.log(pokedex);
 //  });
-  console.log(sortDexByID());
+  console.log(sortDexByID)
 //  console.log("sending pokedex "+dex);
 });
 
