@@ -17,6 +17,7 @@ const NewTeam = () => (
           </Grid.Column>
         </Grid.Row>
         <Grid.Row className='buPar'>
+          <span>&nbsp;</span>
           <Button.Group floated='right'>
             <Button color='green'>Save Team</Button>
             <Button color='red'>Cancel</Button>
