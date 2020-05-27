@@ -5,7 +5,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 class Pokedex extends React.Component {
   constructor() {
     super();
-    this.state = {
+    this.state = { 
       pokedex: [],
       style:{
         height:''
