@@ -108,12 +108,12 @@ class Nav extends React.Component {
           </Grid.Row>
           <Grid.Row>
           <Card.Group itemsPerRow={6}>
-          <Card id="t1" image={"./img/miniDex/"+/*item.Team[0].id*/Math.floor(Math.random() * 803)+"-fs8.png"} />
-          <Card id="t2" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
-          <Card id="t3" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
-          <Card id="t4" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
-          <Card id="t5" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
-          <Card id="t6" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
+          <Card id="t1" image={"./img/miniDex/"+/*item.Team[0].id*/Math.floor(Math.random() * 803)+".png"} />
+          <Card id="t2" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card id="t3" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card id="t4" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card id="t5" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
+          <Card id="t6" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+".png"} />
           </Card.Group>
           </Grid.Row>
         </Grid.Row>
