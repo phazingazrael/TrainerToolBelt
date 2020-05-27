@@ -4,8 +4,8 @@ import Pokedex from "../dexImport";
 
 const NewTeam = () => (
   <Modal id="newTeamModal" trigger={<Button>New Team </Button>} centered={false}>
-    <Modal.Header>Select a Photo</Modal.Header>
-    <Modal.Content image>
+    <Modal.Header>Select your starter</Modal.Header>
+    <Modal.Content>
       <Grid>
         <Grid.Row>
           <Grid.Column width={3}>
@@ -15,9 +15,9 @@ const NewTeam = () => (
             <Header id="newTeamModalHeader">Select first team member</Header>
             <Pokedex/>
           </Grid.Column>
-          <Grid.Column>
-            <button>Save Team</button>
-          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <button>Save Team</button>
         </Grid.Row>
       </Grid>
     </Modal.Content>
