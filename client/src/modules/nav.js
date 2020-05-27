@@ -104,11 +104,11 @@ class Nav extends React.Component {
       return (
         <Grid.Row className="teamIcon" id={item.id} name={item.id} key={item.id}>
           <Grid.Row>
-            <p>Testing Team<sup>X</sup></p>
+            <p>Testing Team<sup className='deleteTeam'>X</sup></p>
           </Grid.Row>
           <Grid.Row>
           <Card.Group itemsPerRow={6}>
-          <Card id="t1" image={"./img/miniDex/"+item.Team[0].id+"-fs8.png"} />
+          <Card id="t1" image={"./img/miniDex/"+/*item.Team[0].id*/Math.floor(Math.random() * 803)+"-fs8.png"} />
           <Card id="t2" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
           <Card id="t3" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
           <Card id="t4" image={"./img/miniDex/"+Math.floor(Math.random() * 803)+"-fs8.png"} />
