@@ -3,7 +3,7 @@ import "./nav.css";
 import "semantic-ui-css/semantic.min.css";
 import { Grid, Card } from "semantic-ui-react";
 import NewTeam from "./NewTeam";
-
+import p2 from './p2.json';
 
 const uuidv4 = require("uuid/v4");
 
@@ -46,6 +46,24 @@ class Nav extends React.Component {
         }
       ,
       body: JSON.stringify(this.state.teams)
+    });
+    const body = await response.json();
+
+    this.componentDidMount();
+    return body;
+  };
+
+  putDex = async () => {
+    const location = window.location.hostname;
+    const response = await fetch(
+    `http://${location}:5000/api/pokedex`, {
+      method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+        }
+      ,
+      body: p2
     });
     const body = await response.json();
 
@@ -141,6 +159,12 @@ class Nav extends React.Component {
           type="button"
         >
           save team?
+        </button>
+        <button
+          onClick={() => this.putDex()} 
+          type="button"
+        >
+          save dex?
         </button>
         
       </div>
