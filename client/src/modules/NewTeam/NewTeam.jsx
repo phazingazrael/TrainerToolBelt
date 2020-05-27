@@ -16,8 +16,8 @@ const NewTeam = () => (
             <Pokedex/>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
-          <button>Save Team</button>
+        <Grid.Row className='buPar'>
+          <Button floated='right' color='green'>Save Team</Button>
         </Grid.Row>
       </Grid>
     </Modal.Content>
