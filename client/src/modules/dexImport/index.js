@@ -59,8 +59,6 @@ class Pokedex extends React.Component {
   }
 
     render() {
-      //const dexList = [].concat(this.state.pokedex)
-      //.sort((a, b) => a.national_id > b.national_id ? 1 : -1);
       const DexList = this.state.pokedex.map(function(item){
         return (
           <Card key={item.national_id} className="dexItem">
@@ -70,6 +68,7 @@ class Pokedex extends React.Component {
               effect="blur"
               src={"./img/miniDex/"+item.national_id+"-fs8.png"} // use normal <img> attributes as props
               />
+              <br/>
               <p>
                 {item.names.en}
               </p>
