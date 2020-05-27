@@ -66,7 +66,7 @@ class Pokedex extends React.Component {
               width="50px"
               alt={item.names.en}
               effect="blur"
-              src={"./img/miniDex/"+item.national_id+".png"} // use normal <img> attributes as props
+              src={"./img/miniDex/"+item.national_id+"-opt.png"} // use normal <img> attributes as props
               />
               <br/>
               <p>
