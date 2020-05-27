@@ -55,7 +55,7 @@ class Nav extends React.Component {
 
   putDex = async () => {
     const location = window.location.hostname;
-    const response = await fetch(
+    const response = await fetch( 
     `http://${location}:5000/api/pokedex`, {
       method: 'POST',
         headers: {
