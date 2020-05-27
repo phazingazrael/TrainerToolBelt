@@ -63,7 +63,7 @@ class Nav extends React.Component {
             'Content-Type': 'application/json'
         }
       ,
-      body: p2
+      body: p2 
     });
     const body = await response.json();
 
