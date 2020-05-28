@@ -4,6 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import DEX from "./pokedex.ts";
 
 var DEXed = JSON.stringify(DEX);
+let dexArr = [];
 
 class Pokedex extends React.Component {
   constructor() {
@@ -35,6 +36,8 @@ class Pokedex extends React.Component {
     console.log("theDex " +DEXed);
     this.getDex()
       .then((res) => {
+        dexArr.push(DEX);
+        console.log(dexArr);
         console.log('test '+res);
         var PokeDex = JSON.parse(res);
         console.log("res=pokedex "+PokeDex);
