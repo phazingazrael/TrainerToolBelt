@@ -5068,12 +5068,12 @@ class Nav extends React.Component {
         >
           save dex?
         </button>
-        {/* <button
+        <button
           onClick={() => this.delDex()} 
           type="button"
         >
           trash dex?
-        </button> */}
+        </button>
       </div>
     );
   }

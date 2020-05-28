@@ -93,7 +93,7 @@ app.delete("/api/teams", (req, res) => {
 
 app.delete("/api/pokedex", (req, res) => {
   console.log(req.body);
-  teamsDb.del("dex", function (err) {
+  teamsDb.clear("dex", function (err) {
     if (err)
       // handle I/O or other error
       console.log(err)
