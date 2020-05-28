@@ -109,7 +109,7 @@ class Nav extends React.Component {
   }
 
   componentDidMount() {
-    console.log(JSON.stringify(defDex));
+    //console.log(JSON.stringify(defDex));
     this.getTeams()
       .then(res => {
         //this.setState.teams = JSON.parse(res);
