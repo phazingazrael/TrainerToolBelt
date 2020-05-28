@@ -15501,3 +15501,5 @@ export const Pokedex = {
 		eggGroups: ["Undiscovered"],
 	}
 };
+
+export default Pokedex;
