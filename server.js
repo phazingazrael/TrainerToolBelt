@@ -96,6 +96,7 @@ app.delete("/api/pokedex", (req, res) => {
   teamsDb.clear("dex", function (err) {
     if (err)
       // handle I/O or other error
+      console.log("deleting dex");
       console.log(err)
   });
 })
@@ -114,6 +115,7 @@ if (process.env.NODE_ENV === "production") {
   // Handle React routing, return all requests to React app
   app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "client/build", "index.html"));
+    //dexDb.clear();
   });
 }
 
