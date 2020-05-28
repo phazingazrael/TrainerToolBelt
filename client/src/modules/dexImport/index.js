@@ -36,8 +36,8 @@ class Pokedex extends React.Component {
     console.log("theDex " +DEXed);
     this.getDex()
       .then((res) => {
-        dexArr.push(DEX);
-        console.log(dexArr);
+        //dexArr.push(DEX);
+        //console.log(dexArr);
         console.log('test '+res);
         var PokeDex = JSON.parse(res);
         console.log("res=pokedex "+PokeDex);
