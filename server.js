@@ -48,7 +48,7 @@ var dex2 = [];
 app.get("/api/pokedex", (req, res) => {
 //res.send(dex);
   dexDb.get("dex", function(err, pokedex) {
-    dex2 = pokedex;
+    dex2 = JSON.parse(pokedex);
    res.send(pokedex);
     console.log(pokedex);
   });
