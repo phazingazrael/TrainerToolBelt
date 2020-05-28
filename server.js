@@ -4940,7 +4940,7 @@ const dex2 = [];
 // API calls
 app.get("/api/pokedex", (req, res) => {
 //res.send(dex);
-console.log("here is the data "+res);
+console.log("here is the data "+ JSON.stringify(res));
   dexDb.get(function(err, pokedex) {
    res.send(pokedex);
    dex2 = pokedex;
