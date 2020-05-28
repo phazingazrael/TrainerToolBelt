@@ -5069,7 +5069,6 @@ class Nav extends React.Component {
           save dex?
         </button>
         <button
-          display="none"
           onClick={() => this.delDex()} 
           type="button"
         >

@@ -53,7 +53,7 @@ app.get("/api/pokedex", (req, res) => {
     console.log(pokedex);
   });
   
-  console.log("sending pokedex ");
+  console.log("sending pokedex "+dex2);
 });
 
 app.post("/api/pokedex", (req, res) => {
