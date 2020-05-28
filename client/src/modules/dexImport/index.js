@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import DEX from './pokedex'
 
 class Pokedex extends React.Component {
   constructor() {
@@ -14,6 +15,7 @@ class Pokedex extends React.Component {
   }
 
   componentDidMount() {
+    console.log(DEX);
     this.getDex()
       .then((res) => {
         console.log(res);
