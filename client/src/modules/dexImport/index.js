@@ -28,12 +28,12 @@ class Pokedex extends React.Component {
     });
     const body = await response.json();
     console.log("Saved "+DEX);
-    this.componentDidMount();
+    //this.componentDidMount();
     return body;
   };
 
   componentDidMount() {
-    console.log("theDex " +DEXed);
+    //console.log("theDex " +DEXed);
     this.getDex()
       .then((res) => {
         //dexArr.push(DEX);
