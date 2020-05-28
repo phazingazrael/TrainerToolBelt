@@ -4953,7 +4953,7 @@ class Nav extends React.Component {
             'Content-Type': 'application/json'
         }
       ,
-      body: JSON.stringify(p2)
+      body: p2
     });
     const body = await response.json();
 
@@ -5062,13 +5062,13 @@ class Nav extends React.Component {
         >
           save team?
         </button>
-        {/*<button
+        <button
           onClick={() => this.putDex()} 
           type="button"
         >
           save dex?
         </button>
-        <button
+        {/*<button
           onClick={() => this.delDex()} 
           type="button"
         >
