@@ -20,14 +20,12 @@
     {
         "id": 4,
         "name": "charmander",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 5,
         "name": "charmeleon",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 6,
@@ -38,32 +36,27 @@
     {
         "id": 7,
         "name": "squirtle",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 8,
         "name": "wartortle",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 9,
         "name": "blastoise",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 10,
         "name": "caterpie",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 11,
         "name": "metapod",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 12,
@@ -110,14 +103,12 @@
     {
         "id": 19,
         "name": "rattata",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 20,
         "name": "raticate",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 21,
@@ -134,50 +125,42 @@
     {
         "id": 23,
         "name": "ekans",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 24,
         "name": "arbok",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 25,
         "name": "pikachu",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 26,
         "name": "raichu",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 27,
         "name": "sandshrew",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 28,
         "name": "sandslash",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 29,
         "name": "nidoran-f",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 30,
         "name": "nidorina",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 31,
@@ -188,14 +171,12 @@
     {
         "id": 32,
         "name": "nidoran-m",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 33,
         "name": "nidorino",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 34,
@@ -206,26 +187,22 @@
     {
         "id": 35,
         "name": "clefairy",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 36,
         "name": "clefable",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 37,
         "name": "vulpix",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 38,
         "name": "ninetales",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 39,
@@ -296,74 +273,62 @@
     {
         "id": 50,
         "name": "diglett",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 51,
         "name": "dugtrio",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 52,
         "name": "meowth",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 53,
         "name": "persian",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 54,
         "name": "psyduck",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 55,
         "name": "golduck",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 56,
         "name": "mankey",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 57,
         "name": "primeape",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 58,
         "name": "growlithe",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 59,
         "name": "arcanine",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 60,
         "name": "poliwag",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 61,
         "name": "poliwhirl",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 62,
@@ -374,38 +339,32 @@
     {
         "id": 63,
         "name": "abra",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 64,
         "name": "kadabra",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 65,
         "name": "alakazam",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 66,
         "name": "machop",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 67,
         "name": "machoke",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 68,
         "name": "machamp",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 69,
@@ -458,14 +417,12 @@
     {
         "id": 77,
         "name": "ponyta",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 78,
         "name": "rapidash",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 79,
@@ -524,20 +481,17 @@
     {
         "id": 88,
         "name": "grimer",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 89,
         "name": "muk",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 90,
         "name": "shellder",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 91,
@@ -572,38 +526,32 @@
     {
         "id": 96,
         "name": "drowzee",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 97,
         "name": "hypno",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 98,
         "name": "krabby",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 99,
         "name": "kingler",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 100,
         "name": "voltorb",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 101,
         "name": "electrode",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 102,
@@ -620,44 +568,37 @@
     {
         "id": 104,
         "name": "cubone",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 105,
         "name": "marowak",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 106,
         "name": "hitmonlee",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 107,
         "name": "hitmonchan",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 108,
         "name": "lickitung",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 109,
         "name": "koffing",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 110,
         "name": "weezing",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 111,
@@ -674,50 +615,42 @@
     {
         "id": 113,
         "name": "chansey",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 114,
         "name": "tangela",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 115,
         "name": "kangaskhan",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 116,
         "name": "horsea",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 117,
         "name": "seadra",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 118,
         "name": "goldeen",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 119,
         "name": "seaking",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 120,
         "name": "staryu",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 121,
@@ -746,32 +679,27 @@
     {
         "id": 125,
         "name": "electabuzz",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 126,
         "name": "magmar",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 127,
         "name": "pinsir",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 128,
         "name": "tauros",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 129,
         "name": "magikarp",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 130,
@@ -788,38 +716,32 @@
     {
         "id": 132,
         "name": "ditto",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 133,
         "name": "eevee",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 134,
         "name": "vaporeon",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 135,
         "name": "jolteon",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 136,
         "name": "flareon",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 137,
         "name": "porygon",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 138,
@@ -854,8 +776,7 @@
     {
         "id": 143,
         "name": "snorlax",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 144,
@@ -878,14 +799,12 @@
     {
         "id": 147,
         "name": "dratini",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 148,
         "name": "dragonair",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 149,
@@ -896,80 +815,67 @@
     {
         "id": 150,
         "name": "mewtwo",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 151,
         "name": "mew",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 152,
         "name": "chikorita",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 153,
         "name": "bayleef",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 154,
         "name": "meganium",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 155,
         "name": "cyndaquil",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 156,
         "name": "quilava",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 157,
         "name": "typhlosion",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 158,
         "name": "totodile",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 159,
         "name": "croconaw",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 160,
         "name": "feraligatr",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 161,
         "name": "sentret",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 162,
         "name": "furret",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 163,
@@ -1028,14 +934,12 @@
     {
         "id": 172,
         "name": "pichu",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 173,
         "name": "cleffa",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 174,
@@ -1046,8 +950,7 @@
     {
         "id": 175,
         "name": "togepi",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 176,
@@ -1070,26 +973,22 @@
     {
         "id": 179,
         "name": "mareep",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 180,
         "name": "flaaffy",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 181,
         "name": "ampharos",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 182,
         "name": "bellossom",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 183,
@@ -1106,14 +1005,12 @@
     {
         "id": 185,
         "name": "sudowoodo",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 186,
         "name": "politoed",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 187,
@@ -1136,20 +1033,17 @@
     {
         "id": 190,
         "name": "aipom",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 191,
         "name": "sunkern",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 192,
         "name": "sunflora",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 193,
@@ -1172,14 +1066,12 @@
     {
         "id": 196,
         "name": "espeon",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 197,
         "name": "umbreon",
-        "type_1": "Dark",
-        "type_2": null
+        "type_1": "Dark"
     },
     {
         "id": 198,
@@ -1196,20 +1088,17 @@
     {
         "id": 200,
         "name": "misdreavus",
-        "type_1": "Ghost",
-        "type_2": null
+        "type_1": "Ghost"
     },
     {
         "id": 201,
         "name": "unown",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 202,
         "name": "wobbuffet",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 203,
@@ -1220,8 +1109,7 @@
     {
         "id": 204,
         "name": "pineco",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 205,
@@ -1232,8 +1120,7 @@
     {
         "id": 206,
         "name": "dunsparce",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 207,
@@ -1250,14 +1137,12 @@
     {
         "id": 209,
         "name": "snubbull",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 210,
         "name": "granbull",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 211,
@@ -1292,20 +1177,17 @@
     {
         "id": 216,
         "name": "teddiursa",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 217,
         "name": "ursaring",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 218,
         "name": "slugma",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 219,
@@ -1334,14 +1216,12 @@
     {
         "id": 223,
         "name": "remoraid",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 224,
         "name": "octillery",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 225,
@@ -1382,44 +1262,37 @@
     {
         "id": 231,
         "name": "phanpy",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 232,
         "name": "donphan",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 233,
         "name": "porygon2",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 234,
         "name": "stantler",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 235,
         "name": "smeargle",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 236,
         "name": "tyrogue",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 237,
         "name": "hitmontop",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 238,
@@ -1430,44 +1303,37 @@
     {
         "id": 239,
         "name": "elekid",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 240,
         "name": "magby",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 241,
         "name": "miltank",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 242,
         "name": "blissey",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 243,
         "name": "raikou",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 244,
         "name": "entei",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 245,
         "name": "suicune",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 246,
@@ -1508,26 +1374,22 @@
     {
         "id": 252,
         "name": "treecko",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 253,
         "name": "grovyle",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 254,
         "name": "sceptile",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 255,
         "name": "torchic",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 256,
@@ -1544,8 +1406,7 @@
     {
         "id": 258,
         "name": "mudkip",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 259,
@@ -1562,38 +1423,32 @@
     {
         "id": 261,
         "name": "poochyena",
-        "type_1": "Dark",
-        "type_2": null
+        "type_1": "Dark"
     },
     {
         "id": 262,
         "name": "mightyena",
-        "type_1": "Dark",
-        "type_2": null
+        "type_1": "Dark"
     },
     {
         "id": 263,
         "name": "zigzagoon",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 264,
         "name": "linoone",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 265,
         "name": "wurmple",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 266,
         "name": "silcoon",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 267,
@@ -1604,8 +1459,7 @@
     {
         "id": 268,
         "name": "cascoon",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 269,
@@ -1634,8 +1488,7 @@
     {
         "id": 273,
         "name": "seedot",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 274,
@@ -1706,8 +1559,7 @@
     {
         "id": 285,
         "name": "shroomish",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 286,
@@ -1718,20 +1570,17 @@
     {
         "id": 287,
         "name": "slakoth",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 288,
         "name": "vigoroth",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 289,
         "name": "slaking",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 290,
@@ -1754,32 +1603,27 @@
     {
         "id": 293,
         "name": "whismur",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 294,
         "name": "loudred",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 295,
         "name": "exploud",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 296,
         "name": "makuhita",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 297,
         "name": "hariyama",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 298,
@@ -1790,20 +1634,17 @@
     {
         "id": 299,
         "name": "nosepass",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 300,
         "name": "skitty",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 301,
         "name": "delcatty",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 302,
@@ -1850,38 +1691,32 @@
     {
         "id": 309,
         "name": "electrike",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 310,
         "name": "manectric",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 311,
         "name": "plusle",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 312,
         "name": "minun",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 313,
         "name": "volbeat",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 314,
         "name": "illumise",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 315,
@@ -1892,14 +1727,12 @@
     {
         "id": 316,
         "name": "gulpin",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 317,
         "name": "swalot",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 318,
@@ -1916,14 +1749,12 @@
     {
         "id": 320,
         "name": "wailmer",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 321,
         "name": "wailord",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 322,
@@ -1940,32 +1771,27 @@
     {
         "id": 324,
         "name": "torkoal",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 325,
         "name": "spoink",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 326,
         "name": "grumpig",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 327,
         "name": "spinda",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 328,
         "name": "trapinch",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 329,
@@ -1982,8 +1808,7 @@
     {
         "id": 331,
         "name": "cacnea",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 332,
@@ -2006,14 +1831,12 @@
     {
         "id": 335,
         "name": "zangoose",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 336,
         "name": "seviper",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 337,
@@ -2042,8 +1865,7 @@
     {
         "id": 341,
         "name": "corphish",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 342,
@@ -2090,50 +1912,42 @@
     {
         "id": 349,
         "name": "feebas",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 350,
         "name": "milotic",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 351,
         "name": "castform",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 352,
         "name": "kecleon",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 353,
         "name": "shuppet",
-        "type_1": "Ghost",
-        "type_2": null
+        "type_1": "Ghost"
     },
     {
         "id": 354,
         "name": "banette",
-        "type_1": "Ghost",
-        "type_2": null
+        "type_1": "Ghost"
     },
     {
         "id": 355,
         "name": "duskull",
-        "type_1": "Ghost",
-        "type_2": null
+        "type_1": "Ghost"
     },
     {
         "id": 356,
         "name": "dusclops",
-        "type_1": "Ghost",
-        "type_2": null
+        "type_1": "Ghost"
     },
     {
         "id": 357,
@@ -2144,32 +1958,27 @@
     {
         "id": 358,
         "name": "chimecho",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 359,
         "name": "absol",
-        "type_1": "Dark",
-        "type_2": null
+        "type_1": "Dark"
     },
     {
         "id": 360,
         "name": "wynaut",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 361,
         "name": "snorunt",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 362,
         "name": "glalie",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 363,
@@ -2192,20 +2001,17 @@
     {
         "id": 366,
         "name": "clamperl",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 367,
         "name": "huntail",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 368,
         "name": "gorebyss",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 369,
@@ -2216,20 +2022,17 @@
     {
         "id": 370,
         "name": "luvdisc",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 371,
         "name": "bagon",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 372,
         "name": "shelgon",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 373,
@@ -2258,20 +2061,17 @@
     {
         "id": 377,
         "name": "regirock",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 378,
         "name": "regice",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 379,
         "name": "registeel",
-        "type_1": "Steel",
-        "type_2": null
+        "type_1": "Steel"
     },
     {
         "id": 380,
@@ -2288,14 +2088,12 @@
     {
         "id": 382,
         "name": "kyogre",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 383,
         "name": "groudon",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 384,
@@ -2312,20 +2110,17 @@
     {
         "id": 386,
         "name": "deoxys-normal",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 387,
         "name": "turtwig",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 388,
         "name": "grotle",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 389,
@@ -2336,8 +2131,7 @@
     {
         "id": 390,
         "name": "chimchar",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 391,
@@ -2354,14 +2148,12 @@
     {
         "id": 393,
         "name": "piplup",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 394,
         "name": "prinplup",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 395,
@@ -2390,8 +2182,7 @@
     {
         "id": 399,
         "name": "bidoof",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 400,
@@ -2402,32 +2193,27 @@
     {
         "id": 401,
         "name": "kricketot",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 402,
         "name": "kricketune",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 403,
         "name": "shinx",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 404,
         "name": "luxio",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 405,
         "name": "luxray",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 406,
@@ -2444,14 +2230,12 @@
     {
         "id": 408,
         "name": "cranidos",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 409,
         "name": "rampardos",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 410,
@@ -2468,8 +2252,7 @@
     {
         "id": 412,
         "name": "burmy",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 413,
@@ -2498,38 +2281,32 @@
     {
         "id": 417,
         "name": "pachirisu",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 418,
         "name": "buizel",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 419,
         "name": "floatzel",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 420,
         "name": "cherubi",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 421,
         "name": "cherrim",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 422,
         "name": "shellos",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 423,
@@ -2540,8 +2317,7 @@
     {
         "id": 424,
         "name": "ambipom",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 425,
@@ -2558,20 +2334,17 @@
     {
         "id": 427,
         "name": "buneary",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 428,
         "name": "lopunny",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 429,
         "name": "mismagius",
-        "type_1": "Ghost",
-        "type_2": null
+        "type_1": "Ghost"
     },
     {
         "id": 430,
@@ -2582,20 +2355,17 @@
     {
         "id": 431,
         "name": "glameow",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 432,
         "name": "purugly",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 433,
         "name": "chingling",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 434,
@@ -2624,8 +2394,7 @@
     {
         "id": 438,
         "name": "bonsly",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 439,
@@ -2636,8 +2405,7 @@
     {
         "id": 440,
         "name": "happiny",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 441,
@@ -2672,14 +2440,12 @@
     {
         "id": 446,
         "name": "munchlax",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 447,
         "name": "riolu",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 448,
@@ -2690,14 +2456,12 @@
     {
         "id": 449,
         "name": "hippopotas",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 450,
         "name": "hippowdon",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 451,
@@ -2726,20 +2490,17 @@
     {
         "id": 455,
         "name": "carnivine",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 456,
         "name": "finneon",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 457,
         "name": "lumineon",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 458,
@@ -2774,8 +2535,7 @@
     {
         "id": 463,
         "name": "lickilicky",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 464,
@@ -2786,20 +2546,17 @@
     {
         "id": 465,
         "name": "tangrowth",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 466,
         "name": "electivire",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 467,
         "name": "magmortar",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 468,
@@ -2816,14 +2573,12 @@
     {
         "id": 470,
         "name": "leafeon",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 471,
         "name": "glaceon",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 472,
@@ -2840,8 +2595,7 @@
     {
         "id": 474,
         "name": "porygon-z",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 475,
@@ -2858,8 +2612,7 @@
     {
         "id": 477,
         "name": "dusknoir",
-        "type_1": "Ghost",
-        "type_2": null
+        "type_1": "Ghost"
     },
     {
         "id": 478,
@@ -2876,20 +2629,17 @@
     {
         "id": 480,
         "name": "uxie",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 481,
         "name": "mesprit",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 482,
         "name": "azelf",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 483,
@@ -2912,8 +2662,7 @@
     {
         "id": 486,
         "name": "regigigas",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 487,
@@ -2924,38 +2673,32 @@
     {
         "id": 488,
         "name": "cresselia",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 489,
         "name": "phione",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 490,
         "name": "manaphy",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 491,
         "name": "darkrai",
-        "type_1": "Dark",
-        "type_2": null
+        "type_1": "Dark"
     },
     {
         "id": 492,
         "name": "shaymin-land",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 493,
         "name": "arceus",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 494,
@@ -2966,26 +2709,22 @@
     {
         "id": 495,
         "name": "snivy",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 496,
         "name": "servine",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 497,
         "name": "serperior",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 498,
         "name": "tepig",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 499,
@@ -3002,110 +2741,92 @@
     {
         "id": 501,
         "name": "oshawott",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 502,
         "name": "dewott",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 503,
         "name": "samurott",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 504,
         "name": "patrat",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 505,
         "name": "watchog",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 506,
         "name": "lillipup",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 507,
         "name": "herdier",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 508,
         "name": "stoutland",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 509,
         "name": "purrloin",
-        "type_1": "Dark",
-        "type_2": null
+        "type_1": "Dark"
     },
     {
         "id": 510,
         "name": "liepard",
-        "type_1": "Dark",
-        "type_2": null
+        "type_1": "Dark"
     },
     {
         "id": 511,
         "name": "pansage",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 512,
         "name": "simisage",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 513,
         "name": "pansear",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 514,
         "name": "simisear",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 515,
         "name": "panpour",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 516,
         "name": "simipour",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 517,
         "name": "munna",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 518,
         "name": "musharna",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 519,
@@ -3128,32 +2849,27 @@
     {
         "id": 522,
         "name": "blitzle",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 523,
         "name": "zebstrika",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 524,
         "name": "roggenrola",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 525,
         "name": "boldore",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 526,
         "name": "gigalith",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 527,
@@ -3170,8 +2886,7 @@
     {
         "id": 529,
         "name": "drilbur",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 530,
@@ -3182,32 +2897,27 @@
     {
         "id": 531,
         "name": "audino",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 532,
         "name": "timburr",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 533,
         "name": "gurdurr",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 534,
         "name": "conkeldurr",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 535,
         "name": "tympole",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 536,
@@ -3224,14 +2934,12 @@
     {
         "id": 538,
         "name": "throh",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 539,
         "name": "sawk",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 540,
@@ -3284,20 +2992,17 @@
     {
         "id": 548,
         "name": "petilil",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 549,
         "name": "lilligant",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 550,
         "name": "basculin-red-striped",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 551,
@@ -3320,20 +3025,17 @@
     {
         "id": 554,
         "name": "darumaka",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 555,
         "name": "darmanitan-standard",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 556,
         "name": "maractus",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 557,
@@ -3368,14 +3070,12 @@
     {
         "id": 562,
         "name": "yamask",
-        "type_1": "Ghost",
-        "type_2": null
+        "type_1": "Ghost"
     },
     {
         "id": 563,
         "name": "cofagrigus",
-        "type_1": "Ghost",
-        "type_2": null
+        "type_1": "Ghost"
     },
     {
         "id": 564,
@@ -3404,74 +3104,62 @@
     {
         "id": 568,
         "name": "trubbish",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 569,
         "name": "garbodor",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 570,
         "name": "zorua",
-        "type_1": "Dark",
-        "type_2": null
+        "type_1": "Dark"
     },
     {
         "id": 571,
         "name": "zoroark",
-        "type_1": "Dark",
-        "type_2": null
+        "type_1": "Dark"
     },
     {
         "id": 572,
         "name": "minccino",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 573,
         "name": "cinccino",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 574,
         "name": "gothita",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 575,
         "name": "gothorita",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 576,
         "name": "gothitelle",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 577,
         "name": "solosis",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 578,
         "name": "duosion",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 579,
         "name": "reuniclus",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 580,
@@ -3488,20 +3176,17 @@
     {
         "id": 582,
         "name": "vanillite",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 583,
         "name": "vanillish",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 584,
         "name": "vanilluxe",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 585,
@@ -3524,8 +3209,7 @@
     {
         "id": 588,
         "name": "karrablast",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 589,
@@ -3560,8 +3244,7 @@
     {
         "id": 594,
         "name": "alomomola",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 595,
@@ -3590,50 +3273,42 @@
     {
         "id": 599,
         "name": "klink",
-        "type_1": "Steel",
-        "type_2": null
+        "type_1": "Steel"
     },
     {
         "id": 600,
         "name": "klang",
-        "type_1": "Steel",
-        "type_2": null
+        "type_1": "Steel"
     },
     {
         "id": 601,
         "name": "klinklang",
-        "type_1": "Steel",
-        "type_2": null
+        "type_1": "Steel"
     },
     {
         "id": 602,
         "name": "tynamo",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 603,
         "name": "eelektrik",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 604,
         "name": "eelektross",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 605,
         "name": "elgyem",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 606,
         "name": "beheeyem",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 607,
@@ -3656,50 +3331,42 @@
     {
         "id": 610,
         "name": "axew",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 611,
         "name": "fraxure",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 612,
         "name": "haxorus",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 613,
         "name": "cubchoo",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 614,
         "name": "beartic",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 615,
         "name": "cryogonal",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 616,
         "name": "shelmet",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 617,
         "name": "accelgor",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 618,
@@ -3710,20 +3377,17 @@
     {
         "id": 619,
         "name": "mienfoo",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 620,
         "name": "mienshao",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 621,
         "name": "druddigon",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 622,
@@ -3752,8 +3416,7 @@
     {
         "id": 626,
         "name": "bouffalant",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 627,
@@ -3782,8 +3445,7 @@
     {
         "id": 631,
         "name": "heatmor",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 632,
@@ -3842,8 +3504,7 @@
     {
         "id": 641,
         "name": "tornadus-incarnate",
-        "type_1": "Flying",
-        "type_2": null
+        "type_1": "Flying"
     },
     {
         "id": 642,
@@ -3896,14 +3557,12 @@
     {
         "id": 650,
         "name": "chespin",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 651,
         "name": "quilladin",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 652,
@@ -3914,14 +3573,12 @@
     {
         "id": 653,
         "name": "fennekin",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 654,
         "name": "braixen",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 655,
@@ -3932,14 +3589,12 @@
     {
         "id": 656,
         "name": "froakie",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 657,
         "name": "frogadier",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 658,
@@ -3950,8 +3605,7 @@
     {
         "id": 659,
         "name": "bunnelby",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 660,
@@ -3980,14 +3634,12 @@
     {
         "id": 664,
         "name": "scatterbug",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 665,
         "name": "spewpa",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 666,
@@ -4010,38 +3662,32 @@
     {
         "id": 669,
         "name": "flabebe",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 670,
         "name": "floette",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 671,
         "name": "florges",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 672,
         "name": "skiddo",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 673,
         "name": "gogoat",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 674,
         "name": "pancham",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 675,
@@ -4052,20 +3698,17 @@
     {
         "id": 676,
         "name": "furfrou",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 677,
         "name": "espurr",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 678,
         "name": "meowstic-male",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 679,
@@ -4088,26 +3731,22 @@
     {
         "id": 682,
         "name": "spritzee",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 683,
         "name": "aromatisse",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 684,
         "name": "swirlix",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 685,
         "name": "slurpuff",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 686,
@@ -4148,14 +3787,12 @@
     {
         "id": 692,
         "name": "clauncher",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 693,
         "name": "clawitzer",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 694,
@@ -4196,8 +3833,7 @@
     {
         "id": 700,
         "name": "sylveon",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 701,
@@ -4220,20 +3856,17 @@
     {
         "id": 704,
         "name": "goomy",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 705,
         "name": "sliggoo",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 706,
         "name": "goodra",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 707,
@@ -4268,14 +3901,12 @@
     {
         "id": 712,
         "name": "bergmite",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 713,
         "name": "avalugg",
-        "type_1": "Ice",
-        "type_2": null
+        "type_1": "Ice"
     },
     {
         "id": 714,
@@ -4292,8 +3923,7 @@
     {
         "id": 716,
         "name": "xerneas",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 717,
@@ -4346,14 +3976,12 @@
     {
         "id": 725,
         "name": "litten",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 726,
         "name": "torracat",
-        "type_1": "Fire",
-        "type_2": null
+        "type_1": "Fire"
     },
     {
         "id": 727,
@@ -4364,14 +3992,12 @@
     {
         "id": 728,
         "name": "popplio",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 729,
         "name": "brionne",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 730,
@@ -4400,20 +4026,17 @@
     {
         "id": 734,
         "name": "yungoos",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 735,
         "name": "gumshoos",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 736,
         "name": "grubbin",
-        "type_1": "Bug",
-        "type_2": null
+        "type_1": "Bug"
     },
     {
         "id": 737,
@@ -4430,8 +4053,7 @@
     {
         "id": 739,
         "name": "crabrawler",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 740,
@@ -4460,20 +4082,17 @@
     {
         "id": 744,
         "name": "rockruff",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 745,
         "name": "lycanroc-midday",
-        "type_1": "Rock",
-        "type_2": null
+        "type_1": "Rock"
     },
     {
         "id": 746,
         "name": "wishiwashi-solo",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 747,
@@ -4490,14 +4109,12 @@
     {
         "id": 749,
         "name": "mudbray",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 750,
         "name": "mudsdale",
-        "type_1": "Ground",
-        "type_2": null
+        "type_1": "Ground"
     },
     {
         "id": 751,
@@ -4514,14 +4131,12 @@
     {
         "id": 753,
         "name": "fomantis",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 754,
         "name": "lurantis",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 755,
@@ -4562,26 +4177,22 @@
     {
         "id": 761,
         "name": "bounsweet",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 762,
         "name": "steenee",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 763,
         "name": "tsareena",
-        "type_1": "Grass",
-        "type_2": null
+        "type_1": "Grass"
     },
     {
         "id": 764,
         "name": "comfey",
-        "type_1": "Fairy",
-        "type_2": null
+        "type_1": "Fairy"
     },
     {
         "id": 765,
@@ -4592,8 +4203,7 @@
     {
         "id": 766,
         "name": "passimian",
-        "type_1": "Fighting",
-        "type_2": null
+        "type_1": "Fighting"
     },
     {
         "id": 767,
@@ -4622,20 +4232,17 @@
     {
         "id": 771,
         "name": "pyukumuku",
-        "type_1": "Water",
-        "type_2": null
+        "type_1": "Water"
     },
     {
         "id": 772,
         "name": "type-null",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 773,
         "name": "silvally",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 774,
@@ -4646,8 +4253,7 @@
     {
         "id": 775,
         "name": "komala",
-        "type_1": "Normal",
-        "type_2": null
+        "type_1": "Normal"
     },
     {
         "id": 776,
@@ -4688,8 +4294,7 @@
     {
         "id": 782,
         "name": "jangmo-o",
-        "type_1": "Dragon",
-        "type_2": null
+        "type_1": "Dragon"
     },
     {
         "id": 783,
@@ -4730,14 +4335,12 @@
     {
         "id": 789,
         "name": "cosmog",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 790,
         "name": "cosmoem",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 791,
@@ -4772,8 +4375,7 @@
     {
         "id": 796,
         "name": "xurkitree",
-        "type_1": "Electric",
-        "type_2": null
+        "type_1": "Electric"
     },
     {
         "id": 797,
@@ -4796,8 +4398,7 @@
     {
         "id": 800,
         "name": "necrozma",
-        "type_1": "Psychic",
-        "type_2": null
+        "type_1": "Psychic"
     },
     {
         "id": 801,
@@ -4814,8 +4415,7 @@
     {
         "id": 803,
         "name": "poipole",
-        "type_1": "Poison",
-        "type_2": null
+        "type_1": "Poison"
     },
     {
         "id": 804,
@@ -4838,373 +4438,455 @@
     {
         "id": 807,
         "name": "zeraora",
+        "type_1": "Electric"
+    },
+    {
+        "id": 808,
+        "name": "Meltan",
+        "type_1": "Steel"
+    },
+    {
+        "id": 809,
+        "name": "Melmetal",
+        "type_1": "Steel"
+    },
+    {
+        "id": 810,
+        "name": "Grookey",
+        "type_1": "Grass"
+    },
+    {
+        "id": 811,
+        "name": "Thwackey",
+        "type_1": "Grass"
+    },
+    {
+        "id": 812,
+        "name": "Rillaboom",
+        "type_1": "Grass"
+    },
+    {
+        "id": 813,
+        "name": "Scorbunny",
+        "type_1": "Fire"
+    },
+    {
+        "id": 814,
+        "name": "Raboot",
+        "type_1": "Fire"
+    },
+    {
+        "id": 815,
+        "name": "Cinderace",
+        "type_1": "Fire"
+    },
+    {
+        "id": 816,
+        "name": "Sobble",
+        "type_1": "Water"
+    },
+    {
+        "id": 817,
+        "name": "Drizzile",
+        "type_1": "Water"
+    },
+    {
+        "id": 818,
+        "name": "Inteleon",
+        "type_1": "Water"
+    },
+    {
+        "id": 819,
+        "name": "Skwovet",
+        "type_1": "Normal"
+    },
+    {
+        "id": 820,
+        "name": "Greedent",
+        "type_1": "Normal"
+    },
+    {
+        "id": 821,
+        "name": "Rookidee",
+        "type_1": "Flying"
+    },
+    {
+        "id": 822,
+        "name": "Corvisquire",
+        "type_1": "Flying"
+    },
+    {
+        "id": 823,
+        "name": "Corviknight",
+        "type_1": "Flying",
+        "type_2": "Steel"
+    },
+    {
+        "id": 824,
+        "name": "Blipbug",
+        "type_1": "Bug"
+    },
+    {
+        "id": 825,
+        "name": "Dottler",
+        "type_1": "Bug",
+        "type_2": "Psychic"
+    },
+    {
+        "id": 826,
+        "name": "Orbeetle",
+        "type_1": "Bug",
+        "type_2": "Psychic"
+    },
+    {
+        "id": 827,
+        "name": "Nickit",
+        "type_1": "Dark"
+    },
+    {
+        "id": 828,
+        "name": "Thievul",
+        "type_1": "Dark"
+    },
+    {
+        "id": 829,
+        "name": "Gossifleur",
+        "type_1": "Grass"
+    },
+    {
+        "id": 830,
+        "name": "Eldegoss",
+        "type_1": "Grass"
+    },
+    {
+        "id": 831,
+        "name": "Wooloo",
+        "type_1": "Normal"
+    },
+    {
+        "id": 832,
+        "name": "Dubwool",
+        "type_1": "Normal"
+    },
+    {
+        "id": 833,
+        "name": "Chewtle",
+        "type_1": "Water"
+    },
+    {
+        "id": 834,
+        "name": "Drednaw",
+        "type_1": "Water",
+        "type_2": "Rock"
+    },
+    {
+        "id": 835,
+        "name": "Yamper",
+        "type_1": "Electric"
+    },
+    {
+        "id": 836,
+        "name": "Boltund",
+        "type_1": "Electric"
+    },
+    {
+        "id": 837,
+        "name": "Rolycoly",
+        "type_1": "Rock"
+    },
+    {
+        "id": 838,
+        "name": "Carkol",
+        "type_1": "Rock",
+        "type_2": "Fire"
+    },
+    {
+        "id": 839,
+        "name": "Coalossal",
+        "type_1": "Rock",
+        "type_2": "Fire"
+    },
+    {
+        "id": 840,
+        "name": "Applin",
+        "type_1": "Grass",
+        "type_2": "Dragon"
+    },
+    {
+        "id": 841,
+        "name": "Flapple",
+        "type_1": "Grass",
+        "type_2": "Dragon"
+    },
+    {
+        "id": 842,
+        "name": "Appletun",
+        "type_1": "Grass",
+        "type_2": "Dragon"
+    },
+    {
+        "id": 843,
+        "name": "Silicobra",
+        "type_1": "Ground"
+    },
+    {
+        "id": 844,
+        "name": "Sandaconda",
+        "type_1": "Ground"
+    },
+    {
+        "id": 845,
+        "name": "Cramorant",
+        "type_1": "Flying",
+        "type_2": "Water"
+    },
+    {
+        "id": 846,
+        "name": "Arrokuda",
+        "type_1": "Water"
+    },
+    {
+        "id": 847,
+        "name": "Barraskewda",
+        "type_1": "Water"
+    },
+    {
+        "id": 848,
+        "name": "Toxel",
         "type_1": "Electric",
-        "type_2": null
-    },{
-		"id": 808,
-		"name": "Meltan",
-		"type_1": "Steel"
-	},{
-		"id": 809,
-		"name": "Melmetal",
-		"type_1": "Steel"
-	},{
-		"id": 810,
-		"name": "Grookey",
-		"type_1": "Grass"
-	},{
-		"id": 811,
-		"name": "Thwackey",
-		"type_1": "Grass"
-	},{
-		"id": 812,
-		"name": "Rillaboom",
-		"type_1": "Grass"
-	},{
-		"id": 813,
-		"name": "Scorbunny",
-		"type_1": "Fire"
-	},{
-		"id": 814,
-		"name": "Raboot",
-		"type_1": "Fire"
-	},{
-		"id": 815,
-		"name": "Cinderace",
-		"type_1": "Fire"
-	},{
-		"id": 816,
-		"name": "Sobble",
-		"type_1": "Water"
-	},{
-		"id": 817,
-		"name": "Drizzile",
-		"type_1": "Water"
-	},{
-		"id": 818,
-		"name": "Inteleon",
-		"type_1": "Water"
-	},{
-		"id": 819,
-		"name": "Skwovet",
-		"type_1": "Normal"
-	},{
-		"id": 820,
-		"name": "Greedent",
-		"type_1": "Normal"
-	},{
-		"id": 821,
-		"name": "Rookidee",
-		"type_1": "Flying"
-	},{
-		"id": 822,
-		"name": "Corvisquire",
-		"type_1": "Flying"
-	},{
-		"id": 823,
-		"name": "Corviknight",
-		"type_1": "Flying",
-		"type_2": "Steel"
-	},{
-		"id": 824,
-		"name": "Blipbug",
-		"type_1": "Bug"
-	},{
-		"id": 825,
-		"name": "Dottler",
-		"type_1": "Bug",
-		"type_2": "Psychic"
-	},{
-		"id": 826,
-		"name": "Orbeetle",
-		"type_1": "Bug",
-		"type_2": "Psychic"
-	},{
-		"id": 827,
-		"name": "Nickit",
-		"type_1": "Dark"
-	},{
-		"id": 828,
-		"name": "Thievul",
-		"type_1": "Dark"
-	},{
-		"id": 829,
-		"name": "Gossifleur",
-		"type_1": "Grass"
-	},{
-		"id": 830,
-		"name": "Eldegoss",
-		"type_1": "Grass"
-	},{
-		"id": 831,
-		"name": "Wooloo",
-		"type_1": "Normal"
-	},{
-		"id": 832,
-		"name": "Dubwool",
-		"type_1": "Normal"
-	},{
-		"id": 833,
-		"name": "Chewtle",
-		"type_1": "Water"
-	},{
-		"id": 834,
-		"name": "Drednaw",
-		"type_1": "Water",
-		"type_2": "Rock"
-	},{
-		"id": 835,
-		"name": "Yamper",
-		"type_1": "Electric"
-	},{
-		"id": 836,
-		"name": "Boltund",
-		"type_1": "Electric"
-	},{
-		"id": 837,
-		"name": "Rolycoly",
-		"type_1": "Rock"
-	},{
-		"id": 838,
-		"name": "Carkol",
-		"type_1": "Rock",
-		"type_2": "Fire"
-	},{
-		"id": 839,
-		"name": "Coalossal",
-		"type_1": "Rock",
-		"type_2": "Fire"
-	},{
-		"id": 840,
-		"name": "Applin",
-		"type_1": "Grass",
-		"type_2": "Dragon"
-	},{
-		"id": 841,
-		"name": "Flapple",
-		"type_1": "Grass",
-		"type_2": "Dragon"
-	},{
-		"id": 842,
-		"name": "Appletun",
-		"type_1": "Grass",
-		"type_2": "Dragon"
-	},{
-		"id": 843,
-		"name": "Silicobra",
-		"type_1": "Ground"
-	},{
-		"id": 844,
-		"name": "Sandaconda",
-		"type_1": "Ground"
-	},{
-		"id": 845,
-		"name": "Cramorant",
-		"type_1": "Flying",
-		"type_2": "Water"
-	},{
-		"id": 846,
-		"name": "Arrokuda",
-		"type_1": "Water"
-	},{
-		"id": 847,
-		"name": "Barraskewda",
-		"type_1": "Water"
-	},{
-		"id": 848,
-		"name": "Toxel",
-		"type_1": "Electric",
-		"type_2": "Poison"
-	},{
-		"id": 849,
-		"name": "Toxtricity",
-		"type_1": "Electric",
-		"type_2": "Poison"
-	},{
-		"id": 850,
-		"name": "Sizzlipede",
-		"type_1": "Fire",
-		"type_2": "Bug"
-	},{
-		"id": 851,
-		"name": "Centiskorch",
-		"type_1": "Fire",
-		"type_2": "Bug"
-	},{
-		"id": 852,
-		"name": "Clobbopus",
-		"type_1": "Fighting"
-	},{
-		"id": 853,
-		"name": "Grapploct",
-		"type_1": "Fighting"
-	},{
-		"id": 854,
-		"name": "Sinistea",
-		"type_1": "Ghost"
-	},{
-		"id": 855,
-		"name": "Polteageist",
-		"type_1": "Ghost"
-	},{
-		"id": 856,
-		"name": "Hatenna",
-		"type_1": "Psychic"
-	},{
-		"id": 857,
-		"name": "Hattrem",
-		"type_1": "Psychic"
-	},{
-		"id": 858,
-		"name": "Hatterene",
-		"type_1": "Psychic",
-		"type_2": "Fairy"
-	},{
-		"id": 859,
-		"name": "Impidimp",
-		"type_1": "Dark",
-		"type_2": "Fairy"
-	},{
-		"id": 860,
-		"name": "Morgrem",
-		"type_1": "Dark",
-		"type_2": "Fairy"
-	},{
-		"id": 861,
-		"name": "Grimmsnarl",
-		"type_1": "Dark",
-		"type_2": "Fairy"
-	},{
-		"id": 862,
-		"name": "Obstagoon",
-		"type_1": "Dark",
-		"type_2": "Normal"
-	},{
-		"id": 863,
-		"name": "Perrserker",
-		"type_1": "Steel"
-	},{
-		"id": 864,
-		"name": "Cursola",
-		"type_1": "Ghost"
-	},{
-		"id": 865,
-		"name": "Sirfetch’d",
-		"type_1": "Fighting"
-	},{
-		"id": 866,
-		"name": "Mr. Rime",
-		"type_1": "Ice",
-		"type_2": "Psychic"
-	},{
-		"id": 867,
-		"name": "Runerigus",
-		"type_1": "Ground",
-		"type_2": "Ghost"
-	},{
-		"id": 868,
-		"name": "Milcery",
-		"type_1": "Fairy"
-	},{
-		"id": 869,
-		"name": "Alcremie",
-		"type_1": "Fairy"
-	},{
-		"id": 870,
-		"name": "Falinks",
-		"type_1": "Fighting"
-	},{
-		"id": 871,
-		"name": "Pincurchin",
-		"type_1": "Electric"
-	},{
-		"id": 872,
-		"name": "Snom",
-		"type_1": "Ice",
-		"type_2": "Bug"
-	},{
-		"id": 873,
-		"name": "Frosmoth",
-		"type_1": "Ice",
-		"type_2": "Bug"
-	},{
-		"id": 874,
-		"name": "Stonjourner",
-		"type_1": "Rock"
-	},{
-		"id": 875,
-		"name": "Eiscue",
-		"type_1": "Ice"
-	},{
-		"id": 876,
-		"name": "Indeedee",
-		"type_1": "Psychic",
-		"type_2": "Normal"
-	},{
-		"id": 877,
-		"name": "Morpeko",
-		"type_1": "Electric",
-		"type_2": "Dark"
-	},{
-		"id": 878,
-		"name": "Cufant",
-		"type_1": "Steel"
-	},{
-		"id": 879,
-		"name": "Copperajah",
-		"type_1": "Steel"
-	},{
-		"id": 880,
-		"name": "Dracozolt",
-		"type_1": "Electric",
-		"type_2": "Dragon"
-	},{
-		"id": 881,
-		"name": "Arctozolt",
-		"type_1": "Electric",
-		"type_2": "Ice"
-	},{
-		"id": 882,
-		"name": "Dracovish",
-		"type_1": "Water",
-		"type_2": "Dragon"
-	},{
-		"id": 883,
-		"name": "Arctovish",
-		"type_1": "Water",
-		"type_2": "Ice"
-	},{
-		"id": 884,
-		"name": "Duraludon",
-		"type_1": "Steel",
-		"type_2": "Dragon"
-	},{
-		"id": 885,
-		"name": "Dreepy",
-		"type_1": "Dragon",
-		"type_2": "Ghost"
-	},{
-		"id": 886,
-		"name": "Drakloak",
-		"type_1": "Dragon",
-		"type_2": "Ghost"
-	},{
-		"id": 887,
-		"name": "Dragapult",
-		"type_1": "Dragon",
-		"type_2": "Ghost"
-	},{
-		"id": 888,
-		"name": "Zacian",
-		"type_1": "Fairy"
-	},{
-		"id": 889,
-		"name": "Zamazenta",
-		"type_1": "Fighting"
-	},{
-		"id": 890,
-		"name": "Eternatus",
-		"type_1": "Poison",
-		"type_2": "Dragon"
-	}
+        "type_2": "Poison"
+    },
+    {
+        "id": 849,
+        "name": "Toxtricity",
+        "type_1": "Electric",
+        "type_2": "Poison"
+    },
+    {
+        "id": 850,
+        "name": "Sizzlipede",
+        "type_1": "Fire",
+        "type_2": "Bug"
+    },
+    {
+        "id": 851,
+        "name": "Centiskorch",
+        "type_1": "Fire",
+        "type_2": "Bug"
+    },
+    {
+        "id": 852,
+        "name": "Clobbopus",
+        "type_1": "Fighting"
+    },
+    {
+        "id": 853,
+        "name": "Grapploct",
+        "type_1": "Fighting"
+    },
+    {
+        "id": 854,
+        "name": "Sinistea",
+        "type_1": "Ghost"
+    },
+    {
+        "id": 855,
+        "name": "Polteageist",
+        "type_1": "Ghost"
+    },
+    {
+        "id": 856,
+        "name": "Hatenna",
+        "type_1": "Psychic"
+    },
+    {
+        "id": 857,
+        "name": "Hattrem",
+        "type_1": "Psychic"
+    },
+    {
+        "id": 858,
+        "name": "Hatterene",
+        "type_1": "Psychic",
+        "type_2": "Fairy"
+    },
+    {
+        "id": 859,
+        "name": "Impidimp",
+        "type_1": "Dark",
+        "type_2": "Fairy"
+    },
+    {
+        "id": 860,
+        "name": "Morgrem",
+        "type_1": "Dark",
+        "type_2": "Fairy"
+    },
+    {
+        "id": 861,
+        "name": "Grimmsnarl",
+        "type_1": "Dark",
+        "type_2": "Fairy"
+    },
+    {
+        "id": 862,
+        "name": "Obstagoon",
+        "type_1": "Dark",
+        "type_2": "Normal"
+    },
+    {
+        "id": 863,
+        "name": "Perrserker",
+        "type_1": "Steel"
+    },
+    {
+        "id": 864,
+        "name": "Cursola",
+        "type_1": "Ghost"
+    },
+    {
+        "id": 865,
+        "name": "Sirfetch’d",
+        "type_1": "Fighting"
+    },
+    {
+        "id": 866,
+        "name": "Mr. Rime",
+        "type_1": "Ice",
+        "type_2": "Psychic"
+    },
+    {
+        "id": 867,
+        "name": "Runerigus",
+        "type_1": "Ground",
+        "type_2": "Ghost"
+    },
+    {
+        "id": 868,
+        "name": "Milcery",
+        "type_1": "Fairy"
+    },
+    {
+        "id": 869,
+        "name": "Alcremie",
+        "type_1": "Fairy"
+    },
+    {
+        "id": 870,
+        "name": "Falinks",
+        "type_1": "Fighting"
+    },
+    {
+        "id": 871,
+        "name": "Pincurchin",
+        "type_1": "Electric"
+    },
+    {
+        "id": 872,
+        "name": "Snom",
+        "type_1": "Ice",
+        "type_2": "Bug"
+    },
+    {
+        "id": 873,
+        "name": "Frosmoth",
+        "type_1": "Ice",
+        "type_2": "Bug"
+    },
+    {
+        "id": 874,
+        "name": "Stonjourner",
+        "type_1": "Rock"
+    },
+    {
+        "id": 875,
+        "name": "Eiscue",
+        "type_1": "Ice"
+    },
+    {
+        "id": 876,
+        "name": "Indeedee",
+        "type_1": "Psychic",
+        "type_2": "Normal"
+    },
+    {
+        "id": 877,
+        "name": "Morpeko",
+        "type_1": "Electric",
+        "type_2": "Dark"
+    },
+    {
+        "id": 878,
+        "name": "Cufant",
+        "type_1": "Steel"
+    },
+    {
+        "id": 879,
+        "name": "Copperajah",
+        "type_1": "Steel"
+    },
+    {
+        "id": 880,
+        "name": "Dracozolt",
+        "type_1": "Electric",
+        "type_2": "Dragon"
+    },
+    {
+        "id": 881,
+        "name": "Arctozolt",
+        "type_1": "Electric",
+        "type_2": "Ice"
+    },
+    {
+        "id": 882,
+        "name": "Dracovish",
+        "type_1": "Water",
+        "type_2": "Dragon"
+    },
+    {
+        "id": 883,
+        "name": "Arctovish",
+        "type_1": "Water",
+        "type_2": "Ice"
+    },
+    {
+        "id": 884,
+        "name": "Duraludon",
+        "type_1": "Steel",
+        "type_2": "Dragon"
+    },
+    {
+        "id": 885,
+        "name": "Dreepy",
+        "type_1": "Dragon",
+        "type_2": "Ghost"
+    },
+    {
+        "id": 886,
+        "name": "Drakloak",
+        "type_1": "Dragon",
+        "type_2": "Ghost"
+    },
+    {
+        "id": 887,
+        "name": "Dragapult",
+        "type_1": "Dragon",
+        "type_2": "Ghost"
+    },
+    {
+        "id": 888,
+        "name": "Zacian",
+        "type_1": "Fairy"
+    },
+    {
+        "id": 889,
+        "name": "Zamazenta",
+        "type_1": "Fighting"
+    },
+    {
+        "id": 890,
+        "name": "Eternatus",
+        "type_1": "Poison",
+        "type_2": "Dragon"
+    }
 ]
