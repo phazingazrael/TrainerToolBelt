@@ -3,7 +3,7 @@ import { Card, Button } from "semantic-ui-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import DEX from "./pokedex.ts";
 
-var DEXed =  JSON.parse(DEX);
+var DEXed = JSON.parse(DEX);
 
 class Pokedex extends React.Component {
   constructor() {
@@ -12,10 +12,9 @@ class Pokedex extends React.Component {
       pokedex: [],
       style: {
         height: "",
-      },
+      }
     };
   }
-  
   putDex = async () => {
     const location = window.location.hostname;
     const response = await fetch(`http://${location}:5000/api/pokedex`, {
@@ -26,9 +25,8 @@ class Pokedex extends React.Component {
       },
       body: DEX,
     });
-    console.log("saved" +DEXed)
     const body = await response.json();
-
+    console.log("Saved "+DEXed);
     this.componentDidMount();
     return body;
   };
