@@ -17,7 +17,7 @@ class Pokedex extends React.Component {
     this.getDex()
       .then(res => {
         console.log(res);
-        var PokeDex = res;
+        var PokeDex = JSON.parse(res);
         //console.log(PokeDex);
         //sorting start
         PokeDex.sort((a, b) => a.national_id - b.national_id);
@@ -35,7 +35,7 @@ class Pokedex extends React.Component {
     const response = await fetch(`http://${location}:5000/api/pokedex`, {
       method: "GET"
     });
-    const body = response;
+    const body = await response.text();
 
     if (response.status !== 200) throw Error(body.message);
     console.log("getDex " +body);
