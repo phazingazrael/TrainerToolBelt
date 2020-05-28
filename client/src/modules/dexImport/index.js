@@ -61,16 +61,16 @@ class Pokedex extends React.Component {
     render() {
       const DexList = this.state.pokedex.map(function(item){
         return (
-          <Card key={item.national_id} className="dexItem">
+          <Card key={item.id} className="dexItem">
             <LazyLoadImage
               width="50px"
-              alt={item.names.en}
+              alt={item.name}
               effect="blur"
-              src={"./img/miniDex/"+item.national_id+"-opt.png"} // use normal <img> attributes as props
+              src={"./img/miniDex/"+item.id+"-opt.png"} // use normal <img> attributes as props
               />
               <br/>
               <p>
-                {item.names.en}
+                {item.name}
               </p>
           </Card>
         ) ;
