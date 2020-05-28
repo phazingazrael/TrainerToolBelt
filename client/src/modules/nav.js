@@ -4974,6 +4974,18 @@ class Nav extends React.Component {
     return body;
   };
 
+  delDex = async () => {
+    const location = window.location.hostname;
+    const response = await fetch(
+    `http://${location}:5000/api/pokedex`, {
+      method: 'delete'
+    });
+    const body = await response.json();
+
+    this.componentDidMount();
+    return body;
+  };
+
   calcHeight =() =>{
     let winHeight = window.innerHeight;
     let headHeight = document.getElementById("header").clientHeight;
@@ -5056,7 +5068,12 @@ class Nav extends React.Component {
         >
           save dex?
         </button>
-        
+        <button
+          onClick={() => this.delDex()} 
+          type="button"
+        >
+          trash dex?
+        </button>
       </div>
     );
   }
