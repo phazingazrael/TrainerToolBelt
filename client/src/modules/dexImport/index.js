@@ -36,7 +36,7 @@ class Pokedex extends React.Component {
     this.getDex()
       .then((res) => {
         console.log('test '+res);
-        var PokeDex = res;
+        var PokeDex = JSON.parse(res);
         console.log("res=pokedex "+PokeDex);
         //sorting start
         PokeDex.sort((a, b) => a.id - b.id);
