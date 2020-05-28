@@ -26,7 +26,7 @@ class Pokedex extends React.Component {
       body: DEX,
     });
     const body = await response.json();
-    console.log("Saved "+DEXed);
+    console.log("Saved "+DEX);
     this.componentDidMount();
     return body;
   };
