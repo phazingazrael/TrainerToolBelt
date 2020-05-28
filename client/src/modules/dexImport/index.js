@@ -16,7 +16,24 @@ class Pokedex extends React.Component {
       }
     };
   }
-  putDex = async () => {
+
+  putTeams = async () => {
+    const location = window.location.hostname;
+    const response = await fetch(`http://${location}:5000/api/teams`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(DEX),
+    });
+    const body = await response.json();
+
+    this.componentDidMount();
+    return body;
+  };
+
+  /*putDex = async () => {
     const location = window.location.hostname;
     const response = await fetch(`http://${location}:5000/api/pokedex`, {
       method: "POST",
@@ -30,14 +47,14 @@ class Pokedex extends React.Component {
     console.log("Saved "+DEX);
     //this.componentDidMount();
     return body;
-  };
+  };*/
 
   componentDidMount() {
     //console.log("theDex " +DEXed);
     this.getDex()
       .then((res) => {
-        //dexArr.push(DEX);
-        //console.log(dexArr);
+        dexArr.push(DEX);
+        console.log(dexArr);
         console.log('test '+res);
         var PokeDex = JSON.parse(res);
         console.log("res=pokedex "+PokeDex);
