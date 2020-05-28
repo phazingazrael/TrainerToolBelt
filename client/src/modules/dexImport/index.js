@@ -30,7 +30,7 @@ class Pokedex extends React.Component {
   };
 
   componentDidMount() {
-    console.log(DEX);
+    console.log("theDex " +DEX);
     this.getDex()
       .then((res) => {
         console.log('test '+res);
@@ -43,7 +43,6 @@ class Pokedex extends React.Component {
         this.setState({ pokedex: PokeDex });
       })
       .catch((err) => console.log(err));
-    this.putDex();
     this.calcHeight();
   }
 
