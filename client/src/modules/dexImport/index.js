@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import DEX from './pokedex.ts'
+import DEX from "./pokedex.ts";
 
 class Pokedex extends React.Component {
   constructor() {
@@ -15,15 +15,13 @@ class Pokedex extends React.Component {
   }
   putDex = async () => {
     const location = window.location.hostname;
-    const response = await fetch(
-    `http://${location}:5000/api/pokedex`, {
-      method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json'
-        }
-      ,
-      body: DEX
+    const response = await fetch(`http://${location}:5000/api/pokedex`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: DEX,
     });
     const body = await response.json();
 
@@ -35,7 +33,7 @@ class Pokedex extends React.Component {
     console.log(DEX);
     this.getDex()
       .then((res) => {
-        console.log(res);
+        console.log('test '+res);
         var PokeDex = JSON.parse(res);
         //console.log(PokeDex);
         //sorting start
@@ -43,9 +41,9 @@ class Pokedex extends React.Component {
         //sorting end
         //alert(JSON.parse(res));
         this.setState({ pokedex: PokeDex });
-        this.putDex();
       })
       .catch((err) => console.log(err));
+    this.putDex();
     this.calcHeight();
   }
 
@@ -80,11 +78,12 @@ class Pokedex extends React.Component {
   render() {
     const DexList = this.state.pokedex.map(function (item) {
       return (
-        <Card 
-        key={item.id} 
-        className="dexItem"
-        meta={item.type_1}
-        description={item.name}>
+        <Card
+          key={item.id}
+          className="dexItem"
+          meta={item.type_1}
+          description={item.name}
+        >
           <LazyLoadImage
             width="50px"
             alt={item.name}
