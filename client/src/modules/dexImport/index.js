@@ -20,7 +20,7 @@ class Pokedex extends React.Component {
         var PokeDex = JSON.parse(res);
         //console.log(PokeDex);
         //sorting start
-        PokeDex.sort((a, b) => a.national_id - b.national_id);
+        PokeDex.sort((a, b) => a.id - b.id);
         //sorting end
         //alert(JSON.parse(res));
         this.setState({ pokedex: PokeDex});
