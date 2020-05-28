@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Button } from "semantic-ui-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import DEX from "./pokedex.ts";
 
@@ -95,6 +95,10 @@ class Pokedex extends React.Component {
     });
 
     return (
+      <Button
+          onClick={() => this.putDex()} 
+          type="button"
+        >Save Dex?</Button>
       <Card.Group itemsPerRow={6} className="dexList" style={this.state.style}>
         {DexList}
       </Card.Group>
