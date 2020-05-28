@@ -3,6 +3,8 @@ import { Card, Button } from "semantic-ui-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import DEX from "./pokedex.ts";
 
+var DEXed =  JSON.parse(DEX);
+
 class Pokedex extends React.Component {
   constructor() {
     super();
@@ -13,7 +15,7 @@ class Pokedex extends React.Component {
       },
     };
   }
-  var DEXed =  JSON.parse(DEX);
+  
   putDex = async () => {
     const location = window.location.hostname;
     const response = await fetch(`http://${location}:5000/api/pokedex`, {
