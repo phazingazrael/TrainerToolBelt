@@ -13,6 +13,23 @@ class Pokedex extends React.Component {
       },
     };
   }
+  putDex = async () => {
+    const location = window.location.hostname;
+    const response = await fetch(
+    `http://${location}:5000/api/pokedex`, {
+      method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+        }
+      ,
+      body: DEX
+    });
+    const body = await response.json();
+
+    this.componentDidMount();
+    return body;
+  };
 
   componentDidMount() {
     console.log(DEX);
@@ -26,6 +43,7 @@ class Pokedex extends React.Component {
         //sorting end
         //alert(JSON.parse(res));
         this.setState({ pokedex: PokeDex });
+        this.putDex();
       })
       .catch((err) => console.log(err));
     this.calcHeight();
