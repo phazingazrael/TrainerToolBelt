@@ -43,7 +43,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //var dex = oakdexPokedex.allPokemon();
 //var dex = oakdexPokedex.findPokemon(4);
-const dex2 = [];
+var dex2 = [];
 // API calls
 app.get("/api/pokedex", (req, res) => {
 //res.send(dex);
