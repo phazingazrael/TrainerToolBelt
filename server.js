@@ -43,17 +43,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //var dex = oakdexPokedex.allPokemon();
 //var dex = oakdexPokedex.findPokemon(4);
-
+const dex2 = [];
 // API calls
 app.get("/api/pokedex", (req, res) => {
 //res.send(dex);
-  dexDb.get("dex", function(err, pokedex) {
+  dexDb.get(function(err, pokedex) {
    res.send(pokedex);
+   dex2 = pokedex;
     console.log(pokedex);
     console.log('an error '+err);
   });
   
-  console.log("sending pokedex "+pokedex);
+  console.log("sending pokedex "+dex2);
 });
 
 app.post("/api/pokedex", (req, res) => {
