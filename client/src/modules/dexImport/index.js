@@ -3,7 +3,7 @@ import { Card, Button } from "semantic-ui-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import DEX from "./pokedex.ts";
 
-var DEXed = JSON.parse(DEX);
+var DEXed = JSON.stringify(DEX);
 
 class Pokedex extends React.Component {
   constructor() {
