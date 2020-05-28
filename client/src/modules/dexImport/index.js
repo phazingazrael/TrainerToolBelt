@@ -23,7 +23,7 @@ class Pokedex extends React.Component {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-      body: DEX,
+      body: DEXed,
     });
     const body = await response.json();
     console.log("Saved "+DEXed);
@@ -32,7 +32,7 @@ class Pokedex extends React.Component {
   };
 
   componentDidMount() {
-    console.log("theDex " +DEX);
+    console.log("theDex " +DEXed);
     this.getDex()
       .then((res) => {
         console.log('test '+res);
