@@ -13,6 +13,7 @@ class Pokedex extends React.Component {
       },
     };
   }
+  var DEXed =  JSON.parse(DEX);
   putDex = async () => {
     const location = window.location.hostname;
     const response = await fetch(`http://${location}:5000/api/pokedex`, {
@@ -23,7 +24,7 @@ class Pokedex extends React.Component {
       },
       body: DEX,
     });
-    console.log("saved" +DEX)
+    console.log("saved" +DEXed)
     const body = await response.json();
 
     this.componentDidMount();
