@@ -5062,7 +5062,7 @@ class Nav extends React.Component {
         >
           save team?
         </button>
-        <button
+        {/*<button
           onClick={() => this.putDex()} 
           type="button"
         >
@@ -5073,7 +5073,7 @@ class Nav extends React.Component {
           type="button"
         >
           trash dex?
-        </button>
+        </button>*/}
       </div>
     );
   }
