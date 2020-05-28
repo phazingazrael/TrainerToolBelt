@@ -50,6 +50,7 @@ app.get("/api/pokedex", (req, res) => {
   dexDb.get("dex", function(err, pokedex) {
    res.send(pokedex);
     console.log(pokedex);
+    console.log('an error '+err);
   });
   
   console.log("sending pokedex "+pokedex);
