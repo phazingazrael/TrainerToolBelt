@@ -20,9 +20,9 @@ oakdexPokedex = require("oakdex-pokedex");
 const app = express();
 const port = process.env.PORT || 5000;
 
-var whitelist = ['http://localhost:5000', 'http://localhost:3000', 'http://45.15.25.239:5000', 'http://45.15.25.239:3000',  '45.15.25.239:5000', '45.15.25.239:3000'];
+var whitelist = ['http://localhost:5000', 'http://localhost:3000', 'localhost:5000', 'localhost:3000', 'http://45.15.25.239:5000', 'http://45.15.25.239:3000',  '45.15.25.239:5000', '45.15.25.239:3000'];
 var corsOptions = {
-  origin: ['http://localhost:5000', 'http://localhost:3000', 'http://45.15.25.239:5000', 'http://45.15.25.239:3000',  '45.15.25.239:5000', '45.15.25.239:3000']
+  origin: ['http://localhost:5000', 'http://localhost:3000', 'localhost:5000', 'localhost:3000', 'http://45.15.25.239:5000', 'http://45.15.25.239:3000',  '45.15.25.239:5000', '45.15.25.239:3000']
   
   //function (origin, callback) {
     //if (whitelist.indexOf(origin) !== -1) {
@@ -41,7 +41,7 @@ app.options('/api/pokedex', cors()) // enable pre-flight request
 app.use(bodyParser.json({limit: '50mb', extended: true}))
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var dex = oakdexPokedex.allPokemon();
+//var dex = oakdexPokedex.allPokemon();
 //var dex = oakdexPokedex.findPokemon(4);
 
 // API calls
@@ -52,7 +52,7 @@ app.get("/api/pokedex", (req, res) => {
     console.log(pokedex);
   });
   
-  console.log("sending pokedex "+dex);
+  console.log("sending pokedex "+pokedex);
 });
 
 app.post("/api/pokedex", (req, res) => {
