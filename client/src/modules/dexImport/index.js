@@ -95,6 +95,7 @@ class Pokedex extends React.Component {
     });
 
     return (
+      <div>
       <Button
           onClick={() => this.putDex()} 
           type="button"
@@ -102,6 +103,7 @@ class Pokedex extends React.Component {
       <Card.Group itemsPerRow={6} className="dexList" style={this.state.style}>
         {DexList}
       </Card.Group>
+      </div>
     );
   }
 }
