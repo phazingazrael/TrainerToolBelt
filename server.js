@@ -6,7 +6,7 @@ const sub = require("subleveldown");
 const cors = require("cors");
 
 // Database config begins
-var db = level("./db2");
+var db = level("db/");
 
 //var teamsDb = db.sublevel("teams");
 var teamsDb = sub(db, "teams", { valueEncoding: 'json' });

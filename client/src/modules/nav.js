@@ -4,8 +4,8 @@ import "semantic-ui-css/semantic.min.css";
 import { Grid, Card } from "semantic-ui-react";
 import NewTeam from "./NewTeam";
 import defDex from "./dexImport/pokedex.ts";
+import { v4 as uuidv4 } from 'uuid';
 
-const uuidv4 = require("uuid/v4");
 
 class Nav extends React.Component {
   constructor() {

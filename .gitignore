@@ -1,3 +1,4 @@
 db/*
 db2/*
 node_modules
+.db2/LOCK
