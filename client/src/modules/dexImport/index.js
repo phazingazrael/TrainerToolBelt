@@ -104,7 +104,7 @@ class Pokedex extends React.Component {
         <Card
           onClick={
             () => {
-              
+              console.log(this.props.team);
               console.log("Current active starter is "+ Starter);
               console.log("You clicked on "+item.name);
               console.log("Which is part of this ITEM: "+ JSON.stringify(item));
