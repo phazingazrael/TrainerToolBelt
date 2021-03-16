@@ -55,11 +55,11 @@ class Pokedex extends React.Component {
       .then((res) => {
         dexArr.push(DEX);
         console.log(dexArr);
-        console.log('test '+res);
-        var PokeDex = JSON.parse(res);
-        console.log("res=pokedex "+PokeDex);
+        //console.log('test '+res);
+        var PokeDex = DEX;
+        //console.log("res=pokedex "+PokeDex);
         //sorting start
-        PokeDex.sort((a, b) => a.id - b.id);
+        //PokeDex.sort((a, b) => a.num - b.num);
         //sorting end
         //alert(JSON.parse(res));
         this.setState({ pokedex: PokeDex });
@@ -100,16 +100,16 @@ class Pokedex extends React.Component {
     const DexList = this.state.pokedex.map(function (item) {
       return (
         <Card
-          key={item.id}
+          key={item.num}
           className="dexItem"
           meta={item.type_1}
           description={item.name}
         >
-          <LazyLoadImage
+          <img
             width="50px"
             alt={item.name}
             effect="blur"
-            src={"./img/miniDex/" + item.id + "-opt.png"} // use normal <img> attributes as props
+            src={"./img/miniDex/" + item.num + ".png"} // use normal <img> attributes as props
           />
           <br />
         </Card>
