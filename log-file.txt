@@ -5,5 +5,9 @@
 [32m[nodemon] starting `node server.js`[39m
 Listening on port 5000
 sending teams
+sending pokedex 
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Listening on port 5000
 sending teams
 sending pokedex 
