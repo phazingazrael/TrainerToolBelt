@@ -1,3 +1,7 @@
 db/*
 node_modules
 db/LOCK
+db/CURRENT
+db/CURRENT
+db/LOCK
+db/LOG
