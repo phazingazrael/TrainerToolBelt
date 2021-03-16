@@ -1,20 +1,22 @@
 import React from "react";
 import { Card, Button } from "semantic-ui-react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+//import { LazyLoadImage } from "react-lazy-load-image-component";
 import DEX from "./pokedex.ts";
 
-var DEXed = JSON.stringify(DEX);
+//var DEXed = JSON.stringify(DEX);
 let dexArr = [];
 
 class Pokedex extends React.Component {
   constructor() {
-    super();
+    super(Starter);
     this.state = {
       pokedex: [],
+      starter: {},
       style: {
         height: "",
       }
     };
+    var Starter = this.state.starter;
   }
 
   putTeams = async () => {
@@ -54,7 +56,7 @@ class Pokedex extends React.Component {
     this.getDex()
       .then((res) => {
         dexArr.push(DEX);
-        console.log(dexArr);
+        //console.log(dexArr);
         //console.log('test '+res);
         var PokeDex = DEX;
         //console.log("res=pokedex "+PokeDex);
@@ -76,7 +78,7 @@ class Pokedex extends React.Component {
     const body = await response.text();
 
     if (response.status !== 200) throw Error(body.message);
-    console.log("getDex " + body);
+    //console.log("getDex " + body);
     return body;
   };
 
@@ -96,11 +98,24 @@ class Pokedex extends React.Component {
     console.log(contHeight);
   };
 
-  render() {
+  render(Starter) {
     const DexList = this.state.pokedex.map(function (item) {
       return (
         <Card
-          key={item.num}
+          onClick={
+            () => {
+              
+              console.log("Current active starter is "+ Starter);
+              console.log("You clicked on "+item.name);
+              console.log("Which is part of this ITEM: "+ JSON.stringify(item));
+              console.log("And in full is "+item);
+              Starter = item;
+              console.log("newStarter: "+Starter);
+              //this.setState({ starter: Starter });
+              //console.log("selected: "+this.state.starter);
+            }
+          }
+          key={item.name}
           className="dexItem"
           meta={item.type_1}
           description={item.name}
@@ -115,7 +130,7 @@ class Pokedex extends React.Component {
         </Card>
       );
     });
-
+    console.log(JSON.stringify(this.props.team));
     return (
       <div>
       <Button

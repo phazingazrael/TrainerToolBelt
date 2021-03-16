@@ -120,6 +120,7 @@ class Nav extends React.Component {
   }
 
   render() {
+    console.log("nav.js this.props.team "+ JSON.stringify(this.props.team));
     const TeamList = this.state.teamList.map(function (item) {
       return (
         <Grid.Row
@@ -187,7 +188,8 @@ class Nav extends React.Component {
             <br />
             {this.state.team.id}
           </p>
-          <NewTeam />
+          {console.log("nav.js this.props.team send to new team modal "+JSON.stringify(this.props.team))}
+          <NewTeam team={this.props.team} />
         </div>
         <div className="teamList">{TeamList}</div>
         <br />

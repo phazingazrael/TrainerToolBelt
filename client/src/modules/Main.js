@@ -84,7 +84,8 @@ class Main extends Component {
     super();
     this.state = {
       team : {
-        nick: "",  id: "",
+        nick: "is this working yo?",  
+        id: "",
         teamName: "",
         gen: "",
         dead: [],
