@@ -1,38 +1,20 @@
 {
-  "name": "Trainer-ToolBelt",
-  "version": "0.5.0",
-  "description": "An on-screen display of team members for use with OBS and Pokemon streaming.",
-  "license": "MIT",
+  "name": "trainertoolbelt",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "client": "cd client && yarn start",
-    "server": "nodemon server.js > log-file.txt",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
-    "dev:server": "cd client && yarn build && cd .. && yarn start",
-    "start": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "concurrently": "^6.0.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "level": "^6.0.1",
-    "leveldown": "^5.6.0",
-    "levelup": "^4.4.0",
-    "nodemon": "^2.0.7",
-    "oakdex-pokedex": "^0.4.5",
-    "subleveldown": "^5.0.1"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/esausilva/example-create-react-app-express.git"
-  },
-  "bugs": {
-    "url": "https://github.com/esausilva/example-create-react-app-express/issues"
-  },
-  "keywords": [
-    "node",
-    "express",
-    "create-react-app"
-  ]
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.9"
+  }
 }
